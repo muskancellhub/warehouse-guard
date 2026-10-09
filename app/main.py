@@ -126,6 +126,44 @@ def saved(pattern):
     return sorted(os.path.basename(p) for p in glob.glob(os.path.join(HERE, pattern)))
 
 
+def strip_tokens(value):
+    """Drop stream_url fields everywhere: they embed a VSS login token."""
+    if isinstance(value, dict):
+        return {k: strip_tokens(v) for k, v in value.items() if k != "stream_url"}
+    if isinstance(value, list):
+        return [strip_tokens(v) for v in value]
+    return value
+
+
+def fill_sources(items, refs):
+    """Give each event or script line the source and camera of the clip it names."""
+    lookup = {r.get("clip"): r for r in refs or [] if isinstance(r, dict) and r.get("clip")}
+    for item in items or []:
+        if not isinstance(item, dict):
+            continue
+        ref = lookup.get(item.get("clip") or "") or {}
+        if not item.get("source") and ref.get("source"):
+            item["source"] = ref["source"]
+        camera = item.get("camera_id") or ref.get("camera_id")
+        if camera and not item.get("camera"):
+            item["camera"] = camera
+
+
+def normalize_ride(data):
+    """Accepts the engine's raw /ride response as well as the app's own format."""
+    data = strip_tokens(data)
+    fill_sources(data.get("segments"), [])
+    fill_sources(data.get("events"), data.get("segments"))
+    return data
+
+
+def normalize_brief(data):
+    """Accepts the engine's raw /brief response as well as the app's own format."""
+    data = strip_tokens(data)
+    fill_sources(data.get("script"), data.get("clips"))
+    return data
+
+
 def list_rides():
     rides = []
     for name in saved("ride_*.json"):
@@ -159,6 +197,7 @@ def get_ride(video):
             except Exception as exc:
                 print(f"api.run_ride failed: {exc}", file=sys.stderr)
         if data is not None:
+            data = normalize_ride(data)
             data["mock"] = False
             return data
     data = load("mock_ride.json") or {"events": []}
@@ -187,6 +226,7 @@ def get_brief(destination, time_of_day, mode):
         except Exception as exc:
             print(f"api.run_brief failed: {exc}", file=sys.stderr)
     if data is not None:
+        data = normalize_brief(data)
         data["mock"] = False
         return data
     if saved("brief_*.json"):

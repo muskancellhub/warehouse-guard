@@ -57,8 +57,10 @@ function cameraOf(item) {
 
 const sourceLabel = (item) => `${cameraOf(item)} · ${clipLabel(clipOf(item))} · ${fmt(item.start)}–${fmt(endOf(item))}`;
 
-// Start of a 30-second chunk within its parent video, from "_chunk_0003".
+// Position in the whole ride: the engine's ride_start when it sends one,
+// otherwise the 30-second chunk number in the file name ("_chunk_0003").
 function rideTime(item, t) {
+  if (Number.isFinite(Number(item.ride_start))) return Number(item.ride_start) + (t - (Number(item.start) || 0));
   const m = /_chunk_(\d+)/.exec(clipOf(item));
   return (m ? parseInt(m[1], 10) * 30 : 0) + t;
 }
@@ -169,12 +171,16 @@ function playSegment(video, placeholder, item, run, { rate = 1, onTime = () => {
     let simulated = false;
     let ticker = null;
     let guard = null;
+    // A 5-second segment file can arrive with times measured in its 30-second
+    // parent chunk (20–25); then the file itself starts at "start".
+    let offset = 0;
 
     function cleanup() {
       clearInterval(ticker);
       clearTimeout(guard);
       video.removeEventListener("timeupdate", onUpdate);
       video.removeEventListener("error", simulate);
+      video.removeEventListener("ended", finish);
       video.removeEventListener("loadedmetadata", begin);
       run.cancels.delete(finish);
     }
@@ -208,11 +214,13 @@ function playSegment(video, placeholder, item, run, { rate = 1, onTime = () => {
       }, 100);
     }
     function onUpdate() {
-      onTime(video.currentTime);
-      if (video.currentTime >= end - 0.05) finish();
+      const t = video.currentTime + offset;
+      onTime(t);
+      if (t >= end - 0.05) finish();
     }
     function begin() {
-      try { video.currentTime = start; } catch (_) { /* seek once metadata exists */ }
+      offset = Number.isFinite(video.duration) && video.duration > 0 && start >= video.duration - 0.05 ? start : 0;
+      try { video.currentTime = start - offset; } catch (_) { /* seek once metadata exists */ }
       video.playbackRate = rate;
       video.dataset.playing = "1";
       if (!run.paused) video.play().catch(simulate);
@@ -226,6 +234,7 @@ function playSegment(video, placeholder, item, run, { rate = 1, onTime = () => {
     placeholder.hidden = true;
     video.addEventListener("timeupdate", onUpdate);
     video.addEventListener("error", simulate);
+    video.addEventListener("ended", finish);
     const url = videoURL(item.source);
     if (video.dataset.src === url && video.readyState >= 1) {
       begin();
@@ -621,7 +630,12 @@ function showSource(i) {
   briefPlaceholder.hidden = true;
   briefVideo.hidden = false;
   const url = videoURL(line.source);
-  const seek = () => { try { briefVideo.currentTime = Number(line.start) || 0; } catch (_) { /* not ready */ } briefVideo.pause(); };
+  const seek = () => {
+    const start = Number(line.start) || 0;
+    const offset = Number.isFinite(briefVideo.duration) && start >= briefVideo.duration - 0.05 ? start : 0;
+    try { briefVideo.currentTime = start - offset; } catch (_) { /* not ready */ }
+    briefVideo.pause();
+  };
   if (briefVideo.dataset.src === url && briefVideo.readyState >= 1) {
     seek();
   } else {
