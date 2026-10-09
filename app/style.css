@@ -99,10 +99,8 @@ body.is-playing .taxi { animation: drive 11s linear infinite; }
   100% { transform: translateX(105vw); }
 }
 
-/* ---------- Maya rides the skyline: the street is the ride's timeline */
+/* ---------- Intro: Maya rides the skyline past the cold open's three problems */
 
-.taxi { transition: opacity 0.4s, transform 0.4s; }
-body.is-riding .taxi { opacity: 0; transform: translateX(-30px); }
 
 .ride-track {
   --mw: 96px;
@@ -112,17 +110,17 @@ body.is-riding .taxi { opacity: 0; transform: translateX(-30px); }
 .maya {
   position: absolute; bottom: 0; width: var(--mw); z-index: 3;
   left: calc(var(--p, 0) * (100% - var(--mw)));
-  transition: left 1s cubic-bezier(0.45, 0.05, 0.35, 1);
+  transition: left 0.85s cubic-bezier(0.45, 0.05, 0.35, 1);
   filter: drop-shadow(2px 3px 0 rgba(46, 33, 24, 0.18));
 }
 .maya .bike { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 78% 96%; transition: transform 0.18s ease-out; }
 .maya .spokes { transform-box: fill-box; transform-origin: center; }
 .maya .leg-a, .maya .leg-b { transform-origin: 36px 29px; }
 .maya .skid { opacity: 0; transition: opacity 0.15s; }
-.maya.pedaling .spokes { animation: spin 0.55s linear infinite; }
-.maya.pedaling .leg-a { animation: pedal 0.55s ease-in-out infinite; }
-.maya.pedaling .leg-b { animation: pedal 0.55s ease-in-out -0.275s infinite; }
-.maya.pedaling .rider { animation: bob 0.275s ease-in-out infinite alternate; }
+.maya.pedaling .spokes { animation: spin 0.4s linear infinite; }
+.maya.pedaling .leg-a { animation: pedal 0.4s ease-in-out infinite; }
+.maya.pedaling .leg-b { animation: pedal 0.4s ease-in-out -0.2s infinite; }
+.maya.pedaling .rider { animation: bob 0.2s ease-in-out infinite alternate; }
 .maya.braking .bike { transform: rotate(4deg); }
 .maya.braking .skid { opacity: 0.6; }
 .maya.swerve .bike { animation: swerve 0.8s ease-in-out; }
@@ -142,7 +140,9 @@ body.is-riding .taxi { opacity: 0; transform: translateX(-30px); }
 .obstacle.cone { width: 24px; }
 .obstacle.gone { animation: fade-out 0.6s ease-in forwards; }
 
-.pins { position: absolute; inset: 0; }
+.pins { position: absolute; inset: 0; transition: opacity 0.6s; }
+.pins.fade { opacity: 0; }
+.hero h1 { cursor: pointer; }
 .pin {
   position: absolute; bottom: 3px; width: 16px; height: 22px; z-index: 1;
   color: var(--c, var(--ink-soft));
