@@ -261,9 +261,9 @@ const OBSTACLES = {
 };
 // The cold open's three problems: a USPS truck, a vandalised barrier, a trash pile.
 const INTRO_STOPS = [
-  { p: 0.26, kind: "truck", cls: "cat-blocked" },
-  { p: 0.52, kind: "barrier", cls: "cat-obstruction" },
-  { p: 0.78, kind: "trash", cls: "cat-sanitation" },
+  { p: 0.25, kind: "truck", cls: "cat-blocked", label: "blocked lane" },
+  { p: 0.5, kind: "barrier", cls: "cat-obstruction", label: "vandalised barrier" },
+  { p: 0.75, kind: "trash", cls: "cat-sanitation", label: "trash pile" },
 ];
 let introRun = 0;
 
@@ -277,28 +277,42 @@ function mayaPlace(p, seconds) {
   }
 }
 
+// The opening scene, full screen. Runs on load; clicking the StreetCast title replays it.
 async function playIntro() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const intro = $("#intro");
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    intro.hidden = true;
+    return;
+  }
   const id = ++introRun;
   const alive = () => id === introRun;
   const obstacle = $("#obstacle");
   const splat = $("#splat");
   const pins = $("#pins");
+
+  intro.style.animation = "none"; // the script is running, so the CSS failsafe isn't needed
+  intro.hidden = false;
+  intro.classList.remove("leaving", "play");
+  void intro.offsetWidth;
+  intro.classList.add("play");
+  document.documentElement.style.overflow = "hidden";
+  $("#intro-line").hidden = true;
   pins.innerHTML = "";
-  pins.classList.remove("fade");
   obstacle.hidden = true;
   splat.hidden = true;
   mayaEl.className = "maya";
-  mayaPlace(-0.12, 0);
+  mayaPlace(-0.15, 0);
   mayaEl.hidden = false;
+  await sleep(450); // let the title land first
+  if (!alive()) return;
 
   for (const stop of INTRO_STOPS) {
     mayaEl.classList.add("pedaling");
-    mayaPlace(stop.p, 0.85);
-    await sleep(850);
+    mayaPlace(stop.p, 0.75);
+    await sleep(750);
     if (!alive()) return;
 
-    // Brake behind it, "!", and a pin where it happened.
+    // Brake behind it, "!", and a labelled pin where it happened.
     mayaEl.classList.remove("pedaling", "swerve");
     mayaEl.classList.add("braking");
     obstacle.className = `obstacle ${stop.kind}`;
@@ -309,9 +323,9 @@ async function playIntro() {
     const pin = document.createElement("span");
     pin.className = `pin ${stop.cls}`;
     pin.style.setProperty("--p", stop.p.toFixed(4));
-    pin.innerHTML = pinSvg;
+    pin.innerHTML = `${pinSvg}<em>${esc(stop.label)}</em>`;
     pins.appendChild(pin);
-    await sleep(650);
+    await sleep(600);
     if (!alive()) return;
 
     splat.hidden = true;
@@ -322,15 +336,29 @@ async function playIntro() {
     if (!alive()) return;
   }
 
-  mayaPlace(1.15, 0.9); // rides off the right edge
-  await sleep(950);
+  mayaPlace(1.2, 0.75); // rides off the right edge
+  await sleep(400);
   if (!alive()) return;
-  mayaEl.hidden = true;
-  mayaEl.className = "maya";
-  obstacle.hidden = true;
-  pins.classList.add("fade");
-  await sleep(700);
-  if (alive()) pins.innerHTML = "";
+  $("#intro-line").hidden = false;
+  await sleep(1300);
+  if (alive()) finishIntro();
+}
+
+function finishIntro() {
+  const intro = $("#intro");
+  if (intro.hidden || intro.classList.contains("leaving")) return;
+  introRun += 1; // stops a running sequence
+  intro.classList.add("leaving");
+  document.documentElement.style.overflow = "";
+  setTimeout(() => {
+    if (!intro.classList.contains("leaving")) return; // replayed meanwhile
+    intro.hidden = true;
+    intro.classList.remove("leaving");
+    mayaEl.hidden = true;
+    mayaEl.className = "maya";
+    $("#obstacle").hidden = true;
+    $("#pins").innerHTML = "";
+  }, 600);
 }
 
 // ---------------------------------------------------------------- Act 1: the rider
@@ -924,6 +952,10 @@ $("#cold-open").addEventListener("click", coldOpen);
 $("#cold-close").addEventListener("click", closeCold);
 document.addEventListener("fullscreenchange", () => { if (!document.fullscreenElement && !$("#cold").hidden) closeCold(); });
 document.addEventListener("keydown", (ev) => {
+  if (!$("#intro").hidden) {
+    if (["Escape", "Enter", " "].includes(ev.key)) finishIntro();
+    return;
+  }
   if (ev.target.closest("select, input, textarea") || $("#complaint").open) return;
   if (ev.key === "Escape" && !$("#cold").hidden) closeCold();
   else if ((ev.key === "c" || ev.key === "C") && !ev.metaKey && !ev.ctrlKey && !ev.altKey) coldOpen();
@@ -947,7 +979,9 @@ $("#brief-me").addEventListener("click", runBrief);
 resetRide();
 briefIdle();
 $(".hero h1").addEventListener("click", playIntro);
-window.addEventListener("load", () => setTimeout(playIntro, 350));
+$("#intro").addEventListener("click", finishIntro);
+$("#intro-skip").addEventListener("click", (ev) => { ev.stopPropagation(); finishIntro(); });
+Promise.race([document.fonts ? document.fonts.ready : Promise.resolve(), sleep(700)]).then(playIntro);
 loadRides();
 loadReady();
 loadEval();
