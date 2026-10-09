@@ -611,6 +611,10 @@ dialog::backdrop { background: rgba(46, 33, 24, 0.55); }
   .tagline { font-size: 25px; }
   .skyline { position: relative; inset: auto; height: 150px; }
   .taxi { bottom: 3px; left: 16px; width: 92px; }
+  .ride-track { --mw: 84px; left: 3%; right: 3%; }
+  .pin em { font-size: 18px; }
+  .pin:nth-child(2) em { bottom: calc(104% + 30px); }
+  .pin:nth-child(3) em { bottom: calc(104% + 60px); }
   .sample { top: 14px; right: 12px; font-size: 11px; padding: 6px 9px; }
 
   .tabs { padding: 0 10px; gap: 4px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; }
