@@ -247,6 +247,134 @@ function playSegment(video, placeholder, item, run, { rate = 1, onTime = () => {
   });
 }
 
+// ---------------------------------------------------------------- Maya rides the skyline
+// During a replay the header street is the ride's timeline: Maya pedals to each
+// problem, brakes behind it, a pin drops where it happened, and she rides on.
+
+const mayaEl = $("#maya");
+const pinSvg = `<svg viewBox="0 0 16 22"><path d="M8 1a7 7 0 0 1 7 7c0 5-7 13-7 13S1 13 1 8a7 7 0 0 1 7-7Z" fill="currentColor" stroke="#2e2118" stroke-width="1.4"/><circle cx="8" cy="8" r="2.6" fill="#fbf6ea"/></svg>`;
+const OBSTACLES = {
+  truck: `<svg viewBox="0 0 110 46"><rect x="2" y="4" width="74" height="34" fill="#f4efe4" stroke="#2e2118" stroke-width="2"/><path d="M76 14h20l10 12v12H76Z" fill="#f4efe4" stroke="#2e2118" stroke-width="2"/><path d="M80 17h14l7 9H80Z" fill="#cfdde0" stroke="#2e2118" stroke-width="1.4"/><path d="M8 26h62" stroke="#a8432f" stroke-width="4"/><path d="M8 32h62" stroke="#2f5d7c" stroke-width="3"/><circle cx="22" cy="40" r="6" fill="#2e2118"/><circle cx="92" cy="40" r="6" fill="#2e2118"/></svg>`,
+  trash: `<svg viewBox="0 0 60 40"><path d="M6 38c-4-10 2-20 10-20 2-6 10-6 12 0 8 0 12 10 8 20Z" fill="#2b2622" stroke="#2e2118" stroke-width="1.5"/><path d="M28 38c-2-9 4-17 11-16 2-5 9-5 10 1 7 1 9 8 6 15Z" fill="#3a332d" stroke="#2e2118" stroke-width="1.5"/><path d="M16 18l2-5 2 5M37 22l2-5 2 5" stroke="#6b5442" stroke-width="1.5" fill="none"/></svg>`,
+  barrier: `<svg viewBox="0 0 60 36"><path d="M4 34l4-22h44l4 22Z" fill="#e8742c" stroke="#2e2118" stroke-width="2"/><path d="M12 14l-3 18M24 14l-2 18M36 14l2 18M48 14l3 18" stroke="#fff5e6" stroke-width="3" opacity=".8"/><path d="M14 24c5-5 9 4 14-1s8 3 12-2" stroke="#7a4f8a" stroke-width="1.6" fill="none"/></svg>`,
+  cone: `<svg viewBox="0 0 30 36"><path d="M15 3l9 29H6Z" fill="#e8742c" stroke="#2e2118" stroke-width="1.8"/><path d="M10 18h10M12 11h6" stroke="#fff5e6" stroke-width="3"/><path d="M3 32h24v3H3Z" fill="#2e2118"/></svg>`,
+};
+const maya = { length: 1, p: 0, braking: false, pending: null, hold: null, coast: null, lastBrake: 0, slots: new Map(), followed: 0 };
+
+function obstacleKind(e) {
+  const group = categoryOf(e).group;
+  if (group === "blocked") return "truck";
+  if (group === "sanitation") return "trash";
+  if (group === "obstruction") return "barrier";
+  return "cone";
+}
+
+const mayaProgress = (item, t) => Math.min(1, Math.max(0, rideTime(item, t) / maya.length));
+
+function mayaPlace(p, seconds) {
+  maya.p = Math.min(1, Math.max(0, p));
+  if (seconds === 0) {
+    mayaEl.style.transition = "none";
+    mayaEl.style.setProperty("--p", maya.p.toFixed(4));
+    void mayaEl.offsetWidth;
+    mayaEl.style.transition = "";
+  } else {
+    mayaEl.style.transitionDuration = `${seconds}s`;
+    mayaEl.style.setProperty("--p", maya.p.toFixed(4));
+  }
+}
+
+function mayaRideTo(p, seconds = 1) {
+  p = Math.max(p, maya.p); // she only ever rides forward
+  if (maya.braking) { maya.pending = { p, seconds }; return; }
+  if (Math.abs(p - maya.p) > 0.0005) {
+    mayaEl.classList.add("pedaling");
+    clearTimeout(maya.coast);
+    maya.coast = setTimeout(() => { if (!maya.braking) mayaEl.classList.remove("pedaling"); }, seconds * 1000 + 80);
+  }
+  mayaPlace(p, seconds);
+}
+
+function mayaStart(length) {
+  mayaReset();
+  maya.length = Math.max(1, length);
+  document.body.classList.add("is-riding");
+  mayaEl.hidden = false;
+  mayaPlace(0, 0);
+}
+
+function mayaEvent(e) {
+  if (mayaEl.hidden) return;
+  // A pin where it happened; several problems at one spot fan out side by side.
+  const slot = Math.round(maya.p * 200);
+  const n = maya.slots.get(slot) || 0;
+  maya.slots.set(slot, n + 1);
+  const pin = document.createElement("span");
+  pin.className = `pin ${categoryOf(e).cls}`;
+  pin.style.setProperty("--p", maya.p.toFixed(4));
+  pin.style.setProperty("--dx", `${n * 11}px`);
+  pin.innerHTML = pinSvg;
+  $("#pins").appendChild(pin);
+
+  // One brake per moment: stop behind the obstacle, "!", then swerve on.
+  const now = performance.now();
+  if (maya.braking || now - maya.lastBrake < 1600) return;
+  maya.lastBrake = now;
+  maya.braking = true;
+  clearTimeout(maya.coast);
+  mayaEl.classList.remove("pedaling", "swerve");
+  mayaEl.classList.add("braking");
+  const obstacle = $("#obstacle");
+  const kind = obstacleKind(e);
+  obstacle.className = `obstacle ${kind}`;
+  obstacle.innerHTML = OBSTACLES[kind];
+  obstacle.style.setProperty("--p", maya.p.toFixed(4));
+  obstacle.hidden = false;
+  const splat = $("#splat");
+  splat.hidden = true;
+  void splat.offsetWidth;
+  splat.hidden = false;
+  maya.hold = setTimeout(() => {
+    splat.hidden = true;
+    obstacle.classList.add("gone");
+    mayaEl.classList.remove("braking");
+    mayaEl.classList.add("swerve");
+    maya.braking = false;
+    const next = maya.pending;
+    maya.pending = null;
+    if (next) mayaRideTo(next.p, next.seconds);
+    setTimeout(() => { mayaEl.classList.remove("swerve"); obstacle.hidden = true; }, 800);
+  }, 1400);
+}
+
+function mayaFinish() {
+  mayaRideTo(1, 1.6);
+  setTimeout(() => {
+    mayaEl.classList.remove("pedaling");
+    document.body.classList.remove("is-riding");
+  }, 3200);
+}
+
+// Stop where she is (tab switch, new ride); pins stay until the next replay.
+function mayaPause() {
+  clearTimeout(maya.hold);
+  clearTimeout(maya.coast);
+  maya.braking = false;
+  maya.pending = null;
+  mayaEl.classList.remove("pedaling", "braking", "swerve");
+  $("#splat").hidden = true;
+  $("#obstacle").hidden = true;
+  document.body.classList.remove("is-riding");
+}
+
+function mayaReset() {
+  mayaPause();
+  mayaEl.hidden = true;
+  maya.slots.clear();
+  maya.lastBrake = 0;
+  $("#pins").innerHTML = "";
+}
+
 // ---------------------------------------------------------------- Act 1: the rider
 
 const rideVideo = $("#ride-video");
@@ -274,6 +402,7 @@ function stopRide() {
   if (rideRun) rideRun.stop();
   rideRun = null;
   setPlaying(false);
+  mayaPause();
 }
 
 function resetRide() {
@@ -286,6 +415,7 @@ function resetRide() {
   $("#ride-length").textContent = "";
   $("#ride-now").textContent = "";
   idle(rideVideo, ridePlaceholder, { title: "Press Replay to watch the ride.", onPlay: replay });
+  mayaReset();
   renderCounters();
   updateFileAll();
 }
@@ -319,10 +449,11 @@ function highlightPlaylist(events) {
   for (const e of events) {
     const key = `${e.source || clipOf(e)}|${e.start}`;
     if (!seen.has(key)) {
-      seen.set(key, { source: e.source, clip: e.clip, camera: e.camera, start: Number(e.start) || 0, end: endOf(e) });
+      seen.set(key, { source: e.source, clip: e.clip, camera: e.camera, ride_start: e.ride_start, start: Number(e.start) || 0, end: endOf(e) });
     }
   }
-  return [...seen.values()];
+  // In ride order, so Maya only ever rides forward.
+  return [...seen.values()].sort((a, b) => rideTime(a, a.start) - rideTime(b, b.start));
 }
 
 async function replay() {
@@ -358,16 +489,25 @@ async function replay() {
   const rate = full ? 4 : 1;
   const pending = new Set(events.map((e) => e._i));
   const reveal = (e) => { if (pending.delete(e._i)) addEvent(e); };
-  setPlaying(true);
+  // The street spans the part of the ride being replayed: the whole ride at 4x,
+  // or up to the last problem in highlights, so the pins spread across the city.
+  const lastMoment = Math.max(1, ...playlist.map((it) => rideTime(it, endOf(it))));
+  const rideLength = Number(rideData.summary && rideData.summary.duration_s) || lastMoment;
+  mayaStart(full ? rideLength : Math.min(rideLength, lastMoment * 1.08));
 
   for (const item of playlist) {
     if (!run.alive) return;
     const here = events.filter((e) => pending.has(e._i) && sameClip(e, item) && overlaps(e, item));
     $("#ride-now").textContent = `${cameraOf(item)} · ${clipLabel(clipOf(item))}`;
+    if (!full) mayaRideTo(mayaProgress(item, Number(item.start) || 0), 1.1);
     await playSegment(rideVideo, ridePlaceholder, item, run, {
       rate,
       onTime: (t) => {
         $("#ride-clock").textContent = fmt(rideTime(item, t));
+        if (full && performance.now() - maya.followed > 400) {
+          maya.followed = performance.now();
+          mayaRideTo(mayaProgress(item, t), 0.45);
+        }
         for (const e of here) if (t >= popAt(e)) reveal(e);
       },
     });
@@ -377,7 +517,7 @@ async function replay() {
   events.forEach(reveal);
   applySummary(rideData.summary);
   $("#ride-now").textContent = "Ride complete";
-  setPlaying(false);
+  mayaFinish();
 }
 
 function addEvent(e) {
@@ -411,6 +551,7 @@ function addEvent(e) {
   $("#feed").prepend(li);
   revealed.push({ e, li });
   updateFileAll();
+  mayaEvent(e);
 }
 
 function applySummary(summary) {

@@ -99,6 +99,66 @@ body.is-playing .taxi { animation: drive 11s linear infinite; }
   100% { transform: translateX(105vw); }
 }
 
+/* ---------- Maya rides the skyline: the street is the ride's timeline */
+
+.taxi { transition: opacity 0.4s, transform 0.4s; }
+body.is-riding .taxi { opacity: 0; transform: translateX(-30px); }
+
+.ride-track {
+  --mw: 96px;
+  position: absolute; left: 2%; right: 2%; bottom: 2px; height: 120px;
+  pointer-events: none; z-index: 2;
+}
+.maya {
+  position: absolute; bottom: 0; width: var(--mw); z-index: 3;
+  left: calc(var(--p, 0) * (100% - var(--mw)));
+  transition: left 1s cubic-bezier(0.45, 0.05, 0.35, 1);
+  filter: drop-shadow(2px 3px 0 rgba(46, 33, 24, 0.18));
+}
+.maya .bike { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 78% 96%; transition: transform 0.18s ease-out; }
+.maya .spokes { transform-box: fill-box; transform-origin: center; }
+.maya .leg-a, .maya .leg-b { transform-origin: 36px 29px; }
+.maya .skid { opacity: 0; transition: opacity 0.15s; }
+.maya.pedaling .spokes { animation: spin 0.55s linear infinite; }
+.maya.pedaling .leg-a { animation: pedal 0.55s ease-in-out infinite; }
+.maya.pedaling .leg-b { animation: pedal 0.55s ease-in-out -0.275s infinite; }
+.maya.pedaling .rider { animation: bob 0.275s ease-in-out infinite alternate; }
+.maya.braking .bike { transform: rotate(4deg); }
+.maya.braking .skid { opacity: 0.6; }
+.maya.swerve .bike { animation: swerve 0.8s ease-in-out; }
+
+.splat { position: absolute; left: 44%; top: -36px; width: 34px; height: 34px; animation: splat 0.5s cubic-bezier(0.2, 1.6, 0.4, 1) both; }
+.splat svg { display: block; width: 100%; height: 100%; }
+
+.obstacle {
+  position: absolute; bottom: 0; z-index: 2;
+  left: calc(var(--p, 0) * (100% - var(--mw)) + var(--mw) - 4px);
+  transform-origin: bottom center; animation: plonk 0.35s ease-out both;
+}
+.obstacle svg { display: block; width: 100%; height: auto; }
+.obstacle.truck { width: 64px; }
+.obstacle.trash { width: 42px; }
+.obstacle.barrier { width: 44px; }
+.obstacle.cone { width: 24px; }
+.obstacle.gone { animation: fade-out 0.6s ease-in forwards; }
+
+.pins { position: absolute; inset: 0; }
+.pin {
+  position: absolute; bottom: 3px; width: 16px; height: 22px; z-index: 1;
+  color: var(--c, var(--ink-soft));
+  left: calc(var(--p, 0) * (100% - var(--mw)) + var(--mw) * 0.62 + var(--dx, 0px));
+  animation: pin-drop 0.6s cubic-bezier(0.3, 1.5, 0.5, 1) both;
+}
+.pin svg { display: block; width: 100%; height: 100%; }
+
+@keyframes pedal { 0%, 100% { transform: rotate(-13deg); } 50% { transform: rotate(13deg); } }
+@keyframes bob { from { transform: translateY(0); } to { transform: translateY(-1.2px); } }
+@keyframes swerve { 0% { transform: none; } 35% { transform: translate(14px, -10px) rotate(-6deg); } 70% { transform: translate(8px, -3px) rotate(2deg); } 100% { transform: none; } }
+@keyframes splat { from { transform: scale(0) rotate(-30deg); opacity: 0; } to { transform: scale(1) rotate(8deg); opacity: 1; } }
+@keyframes plonk { from { transform: scale(0.4); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes fade-out { to { opacity: 0; transform: translateY(4px) scale(0.92); } }
+@keyframes pin-drop { from { transform: translateY(-70px); opacity: 0; } 60% { opacity: 1; } to { transform: none; opacity: 1; } }
+
 /* ---------- notebook tabs */
 
 .tabs {
@@ -507,6 +567,11 @@ dialog::backdrop { background: rgba(46, 33, 24, 0.55); }
   .tagline { font-size: 25px; }
   .skyline { position: relative; inset: auto; height: 150px; }
   .taxi { bottom: 3px; left: 16px; width: 92px; }
+  .ride-track { --mw: 70px; height: 96px; }
+  .obstacle.truck { width: 48px; }
+  .obstacle.trash { width: 32px; }
+  .obstacle.barrier { width: 34px; }
+  .pin { width: 13px; height: 18px; }
   .sample { top: 14px; right: 12px; font-size: 11px; padding: 6px 9px; }
 
   .tabs { padding: 0 10px; gap: 4px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; }
