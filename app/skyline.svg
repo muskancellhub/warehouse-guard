@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 300" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <filter id="ink" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/>
+    </filter>
+    <filter id="wash" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="3" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="16"/>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.35" stop-color="#e9b866" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e2a24c" stop-opacity="0.38"/>
+    </linearGradient>
+    <pattern id="win" width="14" height="16" patternUnits="userSpaceOnUse">
+      <rect x="4" y="4" width="5" height="7" fill="#2e2118" opacity="0.3"/>
+    </pattern>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#2e2118" stroke-width="0.8" opacity="0.35"/>
+    </pattern>
+
+    <symbol id="tower" viewBox="0 0 30 48">
+      <path d="M7 48 9 24M23 48 21 24M15 48V24M8 40 22 32M22 40 8 32" stroke="#2e2118" stroke-width="1.1" fill="none"/>
+      <rect x="5" y="10" width="20" height="15" rx="1" fill="#a8774d" fill-opacity="0.65" stroke="#2e2118" stroke-width="1.1"/>
+      <path d="M5 14.5H25M5 19.5H25" stroke="#2e2118" stroke-width="0.7" opacity="0.6"/>
+      <path d="M3.5 10 15 1.5 26.5 10Z" fill="#8a5a3a" fill-opacity="0.7" stroke="#2e2118" stroke-width="1.1"/>
+    </symbol>
+
+    <symbol id="brownstone" viewBox="0 0 160 70">
+      <rect x="1" y="8" width="158" height="62" fill="#b9784a" fill-opacity="0.55" stroke="#2e2118" stroke-width="1.2"/>
+      <rect x="0.5" y="2" width="159" height="7" fill="#8a5a3a" fill-opacity="0.6" stroke="#2e2118" stroke-width="1.1"/>
+      <g fill="#2e2118" fill-opacity="0.22" stroke="#2e2118" stroke-width="1">
+        <rect x="18" y="15" width="16" height="19"/><rect x="72" y="15" width="16" height="19"/><rect x="124" y="15" width="16" height="19"/>
+        <rect x="18" y="42" width="16" height="19"/><rect x="72" y="42" width="16" height="19"/>
+      </g>
+      <path d="M18 15h16M72 15h16M124 15h16M18 42h16M72 42h16" stroke="#2e2118" stroke-width="2" opacity="0.5"/>
+      <path d="M124 70V52a8 8 0 0 1 16 0V70" fill="#6e4429" fill-opacity="0.55" stroke="#2e2118" stroke-width="1.1"/>
+      <path d="M100 70h8v-3.5h6V63h6v-3.5h4M98 70l22-17" stroke="#2e2118" stroke-width="1.1" fill="none"/>
+    </symbol>
+
+    <symbol id="car" viewBox="0 0 80 30">
+      <path d="M2 25Q2 18 10 17l12-2 10-9h22l12 9q12 1 12 9v1H2Z" fill="#d9c7a8" stroke="#2e2118" stroke-width="1.3"/>
+      <path d="M34 8h9v7H26ZM47 8h7l9 7H47Z" fill="#cfdde0" stroke="#2e2118" stroke-width="1"/>
+      <circle cx="18" cy="25" r="5" fill="#2e2118"/><circle cx="62" cy="25" r="5" fill="#2e2118"/>
+    </symbol>
+
+    <g id="mid">
+      <rect x="0" y="200" width="140" height="86"/><rect x="140" y="180" width="122" height="106"/>
+      <rect x="262" y="210" width="120" height="76"/><rect x="382" y="176" width="118" height="110"/>
+      <rect x="500" y="196" width="140" height="90"/><rect x="640" y="184" width="140" height="102"/>
+      <rect x="780" y="204" width="150" height="82"/><rect x="930" y="178" width="132" height="108"/>
+      <rect x="1062" y="200" width="138" height="86"/><rect x="1200" y="188" width="132" height="98"/>
+      <rect x="1332" y="206" width="130" height="80"/><rect x="1462" y="182" width="138" height="104"/>
+    </g>
+  </defs>
+
+  <!-- sky and warm haze -->
+  <rect width="1600" height="300" fill="url(#sky)"/>
+  <ellipse cx="1120" cy="150" rx="320" ry="80" fill="#f0c879" opacity="0.28" filter="url(#wash)"/>
+  <ellipse cx="300" cy="190" rx="260" ry="60" fill="#eab25f" opacity="0.22" filter="url(#wash)"/>
+
+  <!-- far skyline -->
+  <g fill="#9fb0b6" fill-opacity="0.42" stroke="#2e2118" stroke-opacity="0.38" stroke-width="1" filter="url(#ink)">
+    <rect x="30" y="168" width="55" height="118"/>
+    <rect x="120" y="142" width="60" height="144"/>
+    <rect x="250" y="112" width="50" height="174"/>
+    <rect x="330" y="138" width="40" height="148"/>
+    <path d="M398 286V122h12v-22h8V78h8V60h8v18h8v22h8v22h12v164Z"/>
+    <path d="M430 60V14" fill="none"/>
+    <rect x="520" y="128" width="55" height="158"/>
+    <rect x="598" y="112" width="44" height="174"/>
+    <path d="M598 112Q620 70 642 112M604 98Q620 62 636 98M610 84Q620 56 630 84M620 60V16" fill="none"/>
+    <rect x="700" y="150" width="60" height="136"/>
+    <rect x="815" y="96" width="34" height="190"/>
+    <rect x="900" y="158" width="70" height="128"/>
+    <rect x="1000" y="124" width="50" height="162"/>
+    <rect x="1080" y="146" width="55" height="140"/>
+    <path d="M1150 286h64l-10-224h-44Z"/>
+    <path d="M1160 62 1214 286M1182 62V16" fill="none"/>
+    <rect x="1250" y="134" width="60" height="152"/>
+    <rect x="1330" y="108" width="45" height="178"/>
+    <rect x="1420" y="150" width="70" height="136"/>
+    <rect x="1515" y="126" width="50" height="160"/>
+  </g>
+
+  <!-- mid-rise blocks with windows -->
+  <g filter="url(#ink)">
+    <use href="#mid" fill="#dcc19b" fill-opacity="0.9" stroke="#2e2118" stroke-opacity="0.6" stroke-width="1.1"/>
+    <use href="#mid" fill="url(#win)"/>
+    <rect x="262" y="210" width="34" height="76" fill="url(#hatch)"/>
+    <rect x="1062" y="200" width="30" height="86" fill="url(#hatch)"/>
+    <use href="#tower" x="186" y="132" width="30" height="48"/>
+    <use href="#tower" x="440" y="128" width="30" height="48"/>
+    <use href="#tower" x="1010" y="130" width="30" height="48"/>
+    <use href="#tower" x="1290" y="140" width="30" height="48"/>
+    <use href="#tower" x="1530" y="134" width="30" height="48"/>
+    <!-- fire escape -->
+    <path d="M668 204H752M668 210H752M668 230H752M668 236H752M668 256H752M668 262H752M676 210 704 230M724 236 748 256" stroke="#2e2118" stroke-width="1.1" fill="none"/>
+    <path d="M668 204v6M682 204v6M696 204v6M710 204v6M724 204v6M738 204v6M752 204v6M668 230v6M690 230v6M712 230v6M734 230v6M752 230v6M668 256v6M690 256v6M712 256v6M734 256v6M752 256v6" stroke="#2e2118" stroke-width="0.8" opacity="0.7"/>
+    <!-- mural -->
+    <rect x="800" y="214" width="74" height="66" fill="#d9902f" fill-opacity="0.75" stroke="#2e2118" stroke-width="1.1"/>
+    <g stroke="#7a3f12" stroke-width="1.2" fill="none" opacity="0.85">
+      <circle cx="837" cy="238" r="9"/>
+      <path d="M837 224v-4M837 252v4M823 238h-4M851 238h4M827 228l-3-3M847 228l3-3M827 248l-3 3M847 248l3 3"/>
+      <path d="M837 247q-6 14 4 30M837 262q-12-2-16 6M839 266q10-4 16 2"/>
+    </g>
+  </g>
+
+  <!-- trees -->
+  <g filter="url(#wash)" fill="#8fa077" fill-opacity="0.78">
+    <ellipse cx="556" cy="238" rx="34" ry="25"/><ellipse cx="538" cy="250" rx="20" ry="15"/><ellipse cx="578" cy="248" rx="22" ry="17"/>
+    <ellipse cx="946" cy="232" rx="30" ry="24"/><ellipse cx="930" cy="246" rx="18" ry="14"/><ellipse cx="966" cy="244" rx="20" ry="15"/>
+  </g>
+  <path d="M558 286c-2-14 3-24-2-38M558 262l10-10M948 286c-2-12 3-24-1-36M948 262l-10-9" stroke="#2e2118" stroke-width="1.6" fill="none" filter="url(#ink)"/>
+
+  <!-- brownstones, lamps, parked cars, delivery truck -->
+  <g filter="url(#ink)">
+    <use href="#brownstone" x="20" y="216" width="160" height="70"/>
+    <use href="#brownstone" x="180" y="216" width="160" height="70"/>
+    <use href="#brownstone" x="1000" y="216" width="160" height="70"/>
+    <use href="#brownstone" x="1160" y="216" width="160" height="70"/>
+    <use href="#brownstone" x="1420" y="216" width="160" height="70"/>
+    <path d="M470 286V226q0-8 9-8h7M1252 286V224q0-8 9-8h7" stroke="#2e2118" stroke-width="1.6" fill="none"/>
+    <path d="M482 218l3 6h9l3-6ZM1264 216l3 6h9l3-6Z" fill="#f2b632" stroke="#2e2118" stroke-width="1"/>
+    <use href="#car" x="342" y="260" width="80" height="30"/>
+    <use href="#car" x="1330" y="260" width="80" height="30"/>
+    <g transform="translate(700 242)">
+      <rect x="2" y="4" width="74" height="34" fill="#f4efe4" stroke="#2e2118" stroke-width="1.3"/>
+      <path d="M76 14h20l10 12v12H76Z" fill="#f4efe4" stroke="#2e2118" stroke-width="1.3"/>
+      <path d="M80 17h14l7 9H80Z" fill="#cfdde0" stroke="#2e2118" stroke-width="1"/>
+      <path d="M8 26h62" stroke="#a8432f" stroke-width="3"/><path d="M8 31h62" stroke="#2f5d7c" stroke-width="2"/>
+      <circle cx="22" cy="40" r="6" fill="#2e2118"/><circle cx="92" cy="40" r="6" fill="#2e2118"/>
+    </g>
+  </g>
+
+  <!-- street -->
+  <rect x="0" y="286" width="1600" height="14" fill="#caa271" fill-opacity="0.35"/>
+  <path d="M0 286H1600" stroke="#2e2118" stroke-width="1.8" filter="url(#ink)"/>
+  <path d="M0 294H1600" stroke="#2e2118" stroke-width="0.8" opacity="0.4" stroke-dasharray="22 14" filter="url(#ink)"/>
+</svg>

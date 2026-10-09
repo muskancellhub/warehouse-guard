@@ -1,0 +1,17 @@
+{
+  "request": {"destination": "walker_broadway", "time_of_day": "dusk", "mode": "walking"},
+  "queries": [
+    {"query": "pedestrians crossing at a busy crosswalk dusk", "hits": 3},
+    {"query": "construction barriers or scaffolding on the sidewalk dusk", "hits": 3},
+    {"query": "police vehicle or officer on the street dusk", "hits": 1},
+    {"query": "people waiting at a bus stop dusk", "hits": 2},
+    {"query": "crowded sidewalk near storefronts dusk", "hits": 3},
+    {"query": "rain or wet street with umbrellas dusk", "hits": 0}
+  ],
+  "script": [
+    {"text": "You're heading to Walker Street and Broadway at dusk.", "clip": "20261008_065905_VID_20261006_174811_003_chunk_0003.mp4", "source": "", "camera": "nyc_streets_cam-1", "start": 20, "end": 25},
+    {"text": "Expect a delivery truck on the corner and a worker with a cone directing traffic.", "clip": "20261008_065905_VID_20261006_174811_003_chunk_0003.mp4", "source": "", "camera": "nyc_streets_cam-1", "start": 20, "end": 25},
+    {"text": "Cyclists share the lane here; a USPS truck boxed one in this week.", "clip": "20261008_072419_GOPR0130_chunk_0001.mp4", "source": "", "camera": "nyc_bike_gopro-1", "start": 0, "end": 5}
+  ],
+  "stats": {"person": 14, "car": 6, "truck": 2, "bicycle": 1}
+}

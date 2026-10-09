@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+  // Behind the ingress the app lives at /app/. Relative URLs only resolve there
+  // with a trailing slash, so add it before anything else loads.
+  (function () {
+    var p = location.pathname;
+    if (p.slice(-1) !== "/" && p.split("/").pop().indexOf(".") === -1) {
+      location.replace(p + "/" + location.search);
+    }
+  })();
+</script>
+<title>StreetCast</title>
+<meta name="theme-color" content="#f3ead7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Courier+Prime&family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Libre+Franklin:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img class="skyline" src="skyline.svg" alt="">
+  <div class="masthead">
+    <h1>Street<em>Cast</em></h1>
+    <p class="tagline">New York, one ride at a time.</p>
+  </div>
+  <span id="sample-badge" class="sample" hidden>Sample data</span>
+  <svg class="taxi" viewBox="0 0 120 54" aria-hidden="true">
+    <rect x="50" y="3" width="20" height="9" rx="2" fill="#fff3cc" stroke="#2e2118" stroke-width="1.6"/>
+    <path d="M6 41q0-10 10-12l14-3 12-14h36l14 14 16 2q8 2 8 10v4H6Z" fill="#f2b632" stroke="#2e2118" stroke-width="2"/>
+    <path d="M46 16h14v10H36ZM64 16h12l10 10H64Z" fill="#cfdde0" stroke="#2e2118" stroke-width="1.4"/>
+    <path d="M14 34h92" stroke="#2e2118" stroke-width="3" stroke-dasharray="5 5" opacity="0.8"/>
+    <circle cx="30" cy="44" r="8" fill="#2e2118"/><circle cx="30" cy="44" r="3" fill="#d9c7a8"/>
+    <circle cx="94" cy="44" r="8" fill="#2e2118"/><circle cx="94" cy="44" r="3" fill="#d9c7a8"/>
+    <path d="M110 34h5" stroke="#fff3cc" stroke-width="3"/>
+  </svg>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="ride" role="tab">Ride report <small>for riders</small></button>
+  <button class="tab" data-tab="brief" role="tab">Your Block <small>for newsrooms</small></button>
+  <button class="tab" data-tab="eval" role="tab">Eval <small>the proof</small></button>
+  <span class="stack">Built on VAST · NVIDIA Cosmos · YOLO · W&amp;B Weave</span>
+</nav>
+
+<main>
+  <!-- ============================== Act 1: the rider -->
+  <section id="tab-ride" class="panel active">
+    <div class="controls">
+      <label>Ride <select id="ride-select"><option>Loading…</option></select></label>
+      <label>Play <select id="ride-mode">
+        <option value="highlights" selected>Highlights</option>
+        <option value="full">Full ride (4×)</option>
+      </select></label>
+      <button id="replay" class="primary">▶ Replay</button>
+      <span class="clock"><span class="hand">ride time</span> <b id="ride-clock">0:00</b><small id="ride-length"></small></span>
+    </div>
+
+    <div class="counters">
+      <div class="counter amber">
+        <svg class="ico" viewBox="0 0 40 30"><path d="M2 6h22v16H2ZM24 11h8l6 6v5H24Z"/><circle cx="9" cy="24" r="3.5"/><circle cx="31" cy="24" r="3.5"/></svg>
+        <b id="c-blocked">0</b><span>Blocked lanes</span>
+      </div>
+      <div class="counter green">
+        <svg class="ico" viewBox="0 0 40 30"><path d="M16 7q-2-5 4-5t4 5q8 4 7 13-1 8-11 8T9 20q-1-9 7-13Z"/><path d="M16 7q4 2 8 0M20 4l-3-3M20 4l3-3"/></svg>
+        <b id="c-sanitation">0</b><span>Sanitation</span>
+      </div>
+      <div class="counter orange">
+        <svg class="ico" viewBox="0 0 40 30"><path d="M20 2 28 25H12Z"/><path d="M15 16h10M17 10h6M8 25h24v3H8Z"/></svg>
+        <b id="c-obstruction">0</b><span>Obstructions</span>
+      </div>
+      <div class="counter blue">
+        <svg class="ico" viewBox="0 0 40 30"><path d="M10 3h20v25H10Z"/><path d="M16 1h8v4h-8ZM14 11h12M14 16h12M14 21h8"/></svg>
+        <b id="c-reports">0</b><span>311 reports ready</span>
+      </div>
+      <div class="counter teal">
+        <svg class="ico" viewBox="0 0 40 30"><circle cx="20" cy="15" r="12"/><circle cx="20" cy="15" r="9" stroke-dasharray="2 2"/><path d="M15 15l3.5 3.5L26 11"/></svg>
+        <b id="c-filed">0</b><span>Filed</span>
+      </div>
+      <div class="counter red">
+        <svg class="ico" viewBox="0 0 40 30"><circle cx="20" cy="17" r="11"/><path d="M20 17V10M20 17l5 3M17 2h6M20 2v4"/></svg>
+        <b id="c-lost">0s</b><span>Time lost <em id="c-causes"></em></span>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="frame">
+        <div class="stage">
+          <video id="ride-video" muted playsinline preload="metadata"></video>
+          <div id="ride-placeholder" class="placeholder" hidden></div>
+          <div id="ride-now" class="now"></div>
+        </div>
+      </div>
+      <aside class="feed">
+        <div class="feed-head">
+          <h2>Field notes</h2>
+          <button id="file-all" class="ghost small" disabled>File all</button>
+        </div>
+        <ol id="feed"></ol>
+        <p id="feed-empty" class="empty">Press Replay to watch the ride.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================== Act 3: the newsroom -->
+  <section id="tab-brief" class="panel">
+    <div class="controls">
+      <label>Neighborhood <select id="b-dest">
+        <option value="walker_broadway" selected>Walker St &amp; Broadway</option>
+        <option value="8th_ave_34th">8th Ave &amp; 34th St</option>
+        <option value="nyc_bike_lanes">Lower Manhattan bike lanes</option>
+        <option value="new_york">All of New York</option>
+        <option value="san_francisco">San Francisco</option>
+        <option value="toronto">Toronto</option>
+      </select></label>
+      <label>Time of day <select id="b-time">
+        <option value="day">Day</option>
+        <option value="dusk" selected>Dusk</option>
+        <option value="night">Night</option>
+      </select></label>
+      <label>Mode <select id="b-mode">
+        <option value="walking" selected>Walking</option>
+        <option value="cycling">Cycling</option>
+        <option value="driving">Driving</option>
+      </select></label>
+      <button id="brief-me" class="primary">Brief me</button>
+      <button id="rerun" class="ghost" hidden>Rerun with another mode</button>
+    </div>
+    <div id="ready" class="ready" hidden></div>
+
+    <div class="split">
+      <div>
+        <div class="frame">
+          <div class="stage">
+            <video id="brief-video" muted playsinline preload="metadata"></video>
+            <div id="brief-placeholder" class="placeholder" hidden></div>
+            <div id="bug" class="bug" hidden>Your Block</div>
+            <button id="chip" class="chip" hidden></button>
+            <div id="lower" class="lower" hidden>
+              <div class="lower-tag"><b>Your Block</b><span id="lower-place"></span></div>
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+        <div id="stats" class="stats"></div>
+      </div>
+      <aside class="feed rundown">
+        <h2>Searches</h2>
+        <ol id="searches" class="searches"></ol>
+        <h2>Script <small>every line cites a clip</small></h2>
+        <ol id="script" class="script"></ol>
+        <p id="brief-msg" class="empty">Pick a block, a time and how you're getting there, then press Brief me.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================== Close: the eval -->
+  <section id="tab-eval" class="panel">
+    <div class="counters eval-tiles">
+      <div class="counter blue"><b id="e-checked">–</b><span>Rides &amp; briefings checked</span></div>
+      <div class="counter orange"><b id="e-claims">–</b><span>Claims</span></div>
+      <div class="counter green"><b id="e-grounded">–</b><span>Grounded</span></div>
+      <div class="counter red"><b id="e-rate">–</b><span>Grounding rate</span></div>
+    </div>
+    <div class="ledger">
+      <div class="feed-head">
+        <h2>Hand-checked claims</h2>
+        <a id="weave-link" class="ghost small" target="_blank" rel="noopener" hidden>Open in Weave</a>
+      </div>
+      <div class="table-scroll">
+        <table id="eval-table">
+          <thead><tr><th>Checked</th><th>Kind</th><th class="num">Claims</th><th class="num">Grounded</th><th class="num">Rate</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p id="eval-msg" class="empty"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Rider files it. The city sees it. The newsroom airs it.</span>
+  <button id="cold-open" class="linkish" title="Play the cold-open clip full screen (C)">Cold open</button>
+</footer>
+
+<dialog id="complaint">
+  <form method="dialog" class="sheet">
+    <header>
+      <div>
+        <small>311 service request · draft</small>
+        <h3>Street complaint</h3>
+      </div>
+      <span id="cp-badge" class="tag"></span>
+    </header>
+    <dl id="cp-fields"></dl>
+    <p id="cp-text" class="cp-text"></p>
+    <p class="privacy">Fleet numbers, never plates. No license plates are recorded.</p>
+    <menu>
+      <button value="close" class="ghost">Close</button>
+      <button id="cp-file" value="file" class="primary">Ready to file</button>
+    </menu>
+  </form>
+</dialog>
+
+<div id="cold" class="cold" hidden>
+  <video id="cold-video" muted playsinline></video>
+  <div id="cold-placeholder" class="placeholder" hidden></div>
+  <button id="cold-close" class="cold-close" aria-label="Close">✕</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

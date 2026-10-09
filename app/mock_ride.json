@@ -1,0 +1,11 @@
+{
+  "video": "GOPR0130",
+  "label": "GOPR0130 · Maya's ride",
+  "summary": {"duration_s": 895, "events": 4, "reports_ready": 4, "time_lost_s": 42, "by_cause": {"delivery trucks": 0.7, "construction": 0.3}},
+  "events": [
+    {"clip": "20261008_072353_GOPR0130_chunk_0000.mp4", "source": "", "camera": "nyc_bike_gopro-1", "start": 20, "end": 25, "category": "blocked bike lane", "company": "USPS", "fleet_number": "6531286", "rider_reaction": "stopped", "street": "not visible", "merged": 3, "text": "USPS truck 6531286 parked in the lane; rider stopped behind it."},
+    {"clip": "20261008_072353_GOPR0130_chunk_0000.mp4", "source": "", "camera": "nyc_bike_gopro-1", "start": 20, "end": 25, "category": "street obstruction", "company": null, "fleet_number": null, "rider_reaction": "stopped", "street": "not visible", "text": "Orange barricade with graffiti in front of the truck."},
+    {"clip": "20261008_072353_GOPR0130_chunk_0000.mp4", "source": "", "camera": "nyc_bike_gopro-1", "start": 20, "end": 25, "category": "sanitation", "company": null, "fleet_number": null, "rider_reaction": "riding", "street": "not visible", "text": "Pile of black trash bags on the sidewalk."},
+    {"clip": "20261008_073853_GX010001_chunk_0005.mp4", "source": "", "camera": "nyc_bike_gopro-1", "start": 15, "end": 20, "category": "double parking", "company": "UPS", "fleet_number": null, "rider_reaction": "slowed", "street": "not visible", "text": "UPS truck parked with rear doors open; cyclists pass in the lane."}
+  ]
+}

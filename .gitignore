@@ -1,0 +1,17 @@
+# secrets and per-team config: never commit
+*.config
+.env
+.env.*
+*k8s*.yaml
+*secret*.yaml
+kubeconfig*
+
+# media stays in VAST, not in git
+*.mp4
+*.mov
+
+# python / os
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

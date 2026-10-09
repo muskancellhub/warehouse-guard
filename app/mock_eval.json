@@ -1,0 +1,9 @@
+{
+  "weave_url": null,
+  "note": "Sample rows for layout only. Replace with eval_results.json from eval.py.",
+  "rows": [
+    {"kind": "ride", "video": "GOPR0130", "label": "GOPR0130 · Maya's ride", "claims": 6, "grounded": 5},
+    {"kind": "briefing", "destination": "walker_broadway", "time_of_day": "dusk", "mode": "walking", "claims": 7, "grounded": 6},
+    {"kind": "briefing", "destination": "8th_ave_34th", "time_of_day": "day", "mode": "driving", "claims": 6, "grounded": 6}
+  ]
+}
