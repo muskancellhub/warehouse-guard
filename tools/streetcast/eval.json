@@ -10,7 +10,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075209_GX050001_chunk_0013_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Expect to see a dedicated bike lane marked with white bicycle symbols and directional arrows.",
@@ -18,7 +18,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075209_GX050001_chunk_0013_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be cautious of vehicles parked on the left side of the street, including a dark-colored SUV and a silver SUV.",
@@ -26,7 +26,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075351_GX050001_chunk_0017_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You may encounter traffic cones narrowing the lane, so be prepared to navigate around them.",
@@ -34,7 +34,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "As you approach intersections, watch for cars turning across crosswalks with cyclists.",
@@ -42,7 +42,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Pedestrians will be present on the sidewalks and crosswalks, so maintain a safe pace and yield when necessary.",
@@ -50,7 +50,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074822_GX050001_chunk_0004_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "The urban environment will feature tall buildings with illuminated windows, streetlights, and typical city infrastructure.",
@@ -58,7 +58,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074756_GX050001_chunk_0003_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -73,7 +73,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_070528_VID_20261006_174811_003_chunk_0018_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Expect to see pedestrians crossing at busy crosswalks like this one.",
@@ -81,7 +81,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_064757_VID_20261006_171812_002_chunk_0008_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Construction barriers and scaffolding may be present on the sidewalks.",
@@ -89,7 +89,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073918_GX010001_chunk_0006_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Police vehicles or officers may be seen on the streets.",
@@ -97,7 +97,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You may encounter crowded sidewalks near storefronts.",
@@ -105,7 +105,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "And be prepared for rainy or wet conditions with umbrellas.",
@@ -113,7 +113,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "People will be waiting at bus stops, and traffic will be flowing through the city.",
@@ -121,7 +121,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_065419_VID_20261006_171812_002_chunk_0023_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -136,7 +136,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072419_GOPR0130_chunk_0001_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be cautious of pedestrians stepping into the road between cars, as shown in clip 20261008_070230_VID_20261006_174811_003_chunk_0011_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
@@ -144,7 +144,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_070230_VID_20261006_174811_003_chunk_0011_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "Road work with cones and lane closures is present, as seen in clip 20261008_071213_IMG_0509_chunk_0003_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
@@ -152,7 +152,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_071213_IMG_0509_chunk_0003_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Yellow taxis will be stopped at intersections, as shown in clip 20261008_070852_VID_20261006_174811_003_chunk_0026_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -160,7 +160,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_070852_VID_20261006_174811_003_chunk_0026_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Buses will be pulling into intersections, as seen in clip 20261008_071355_IMG_0509_chunk_0007_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -168,7 +168,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_071355_IMG_0509_chunk_0007_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Pedestrians are walking across crosswalks, as shown in clip 20261008_070412_VID_20261006_174811_003_chunk_0015_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
@@ -176,7 +176,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_070412_VID_20261006_174811_003_chunk_0015_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Construction barriers and orange cones are placed on the road, as seen in clip 20261008_064757_VID_20261006_171812_002_chunk_0008_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -184,7 +184,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_064757_VID_20261006_171812_002_chunk_0008_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -199,7 +199,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072353_GOPR0130_chunk_0000_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you ride, be cautious of orange construction barriers with graffiti, like the one shown in clip 20261008_072419_GOPR0130_chunk_0001_segment_004_of_006.mp4 from 15.0 to 20.0 seconds, which may further obstruct your path.",
@@ -207,7 +207,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072419_GOPR0130_chunk_0001_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You'll also encounter dedicated bike lanes marked with green paint and white directional arrows, as seen in clip 20261008_073129_GOPR0130_chunk_0018_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -215,7 +215,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073129_GOPR0130_chunk_0018_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be aware of pedestrians crossing the street at marked crosswalks, like the one shown in clip 20261008_073038_GOPR0130_chunk_0016_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -223,7 +223,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073038_GOPR0130_chunk_0016_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Additionally, you may see orange traffic cones narrowing the lane, as depicted in clip 20261008_074538_GX010001_chunk_0021_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
@@ -231,7 +231,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074538_GX010001_chunk_0021_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you navigate through the city, keep an eye out for vehicles turning across crosswalks, like the scene shown in clip 20261008_072948_GOPR0130_chunk_0014_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
@@ -239,7 +239,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072948_GOPR0130_chunk_0014_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Finally, be prepared to stop behind parked trucks, such as the white USPS delivery truck shown in clip 20261008_072353_GOPR0130_chunk_0000_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
@@ -247,7 +247,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072353_GOPR0130_chunk_0000_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -262,7 +262,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you walk, you'll notice the streets are lined with tall buildings and illuminated storefronts, like in this scene",
@@ -270,7 +270,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be mindful of cyclists, who may be riding in designated bike lanes or on the sidewalk, as seen here",
@@ -278,7 +278,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "Some areas may have construction barriers or scaffolding on the sidewalk, requiring you to navigate around them",
@@ -286,7 +286,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "You may also encounter police vehicles or officers on the street, as shown in this clip",
@@ -294,7 +294,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074822_GX050001_chunk_0004_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "As you make your way through the city, you'll see people waiting at bus stops or walking along crowded sidewalks near storefronts",
@@ -302,7 +302,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "And be prepared for potentially wet streets, especially if it's been raining, as seen in this scene",
@@ -310,7 +310,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       }
     ]
   },
@@ -325,7 +325,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you ride, you may encounter delivery trucks parked in the bike lane, like this USPS truck.",
@@ -333,7 +333,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072353_GOPR0130_chunk_0000_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be cautious of orange cones narrowing the lane, as seen here.",
@@ -341,7 +341,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You'll also see cyclists riding in green bike lanes, like this one.",
@@ -349,7 +349,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073013_GOPR0130_chunk_0015_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Cars may turn across crosswalks with cyclists, so stay alert.",
@@ -357,7 +357,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_072948_GOPR0130_chunk_0014_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "And be prepared for stopped trucks, like this UPS delivery truck, which may block part of the lane.",
@@ -365,7 +365,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073104_GOPR0130_chunk_0017_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you navigate the city streets, keep an eye out for pedestrians and other cyclists.",
@@ -373,7 +373,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073013_GOPR0130_chunk_0015_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -388,7 +388,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_070619_VID_20261006_174811_003_chunk_0020_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you walk, you'll notice cyclists riding on the sidewalk, as seen in clip 20261008_075053_GX050001_chunk_0010_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -396,7 +396,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075053_GX050001_chunk_0010_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be mindful of construction barriers or scaffolding on the sidewalk, like in clip 20261008_073220_GOPR0130_chunk_0020_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
@@ -404,7 +404,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073220_GOPR0130_chunk_0020_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You may also encounter police vehicles or officers on the street, as shown in clip 20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
@@ -412,7 +412,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "People will be waiting at bus stops, like in clip 20261008_070412_VID_20261006_174811_003_chunk_0015_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
@@ -420,7 +420,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_070412_VID_20261006_174811_003_chunk_0015_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Sidewalks near storefronts may be crowded, as seen in clip 20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
@@ -428,7 +428,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "And, in case of rain, you might see umbrellas and wet streets, like in clip 20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
@@ -436,7 +436,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -451,7 +451,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074731_GX050001_chunk_0002_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be cautious of double-parked vehicles blocking lanes, like in clip 20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
@@ -459,7 +459,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you navigate through the city, you'll encounter dedicated bike lanes, such as the one shown in clip 20261008_075351_GX050001_chunk_0017_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -467,7 +467,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075351_GX050001_chunk_0017_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Yellow taxis will be present on the roads, as seen in clip 20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
@@ -475,7 +475,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Buses will also be navigating the streets, like in clip 20261008_075209_GX050001_chunk_0013_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -483,7 +483,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075209_GX050001_chunk_0013_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Pedestrians will be stepping into the road between cars, as shown in clip 20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4 from 5.0 to 10.0 seconds, so be prepared to yield.",
@@ -491,7 +491,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Road work with cones and lane closures may cause delays, as seen in clip 20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
@@ -499,7 +499,7 @@
         "start": 15.0,
         "end": 20.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -514,7 +514,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_095307_sf2_chunk_0004_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you drive, be aware of pedestrians crossing the street, like in clip 20261001_100624_sf3_chunk_0005_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
@@ -522,7 +522,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_100624_sf3_chunk_0005_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You may also encounter yellow taxis stopped at intersections, as shown in clip 20261001_100224_sf2_chunk_0026_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
@@ -530,7 +530,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_100224_sf2_chunk_0026_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Buses will be pulling into intersections, like in clip 20261001_101438_sf4_chunk_0018_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
@@ -538,7 +538,7 @@
         "start": 10.0,
         "end": 15.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_101438_sf4_chunk_0018_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Pedestrians may step into the road between cars, as seen in clip 20261006_123753_sf5_chunk_0005_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
@@ -546,7 +546,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261006_123753_sf5_chunk_0005_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Be cautious of vehicles entering on red lights, like in clip 20261001_095126_sf2_chunk_0000_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
@@ -554,7 +554,7 @@
         "start": 5.0,
         "end": 10.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_095126_sf2_chunk_0000_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "As you navigate through the city, keep an eye out for pedestrians walking along the sidewalks and crossing at marked crosswalks, as shown in clip 20261001_094126_sf1_chunk_0001_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
@@ -562,7 +562,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_094126_sf1_chunk_0001_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   },
@@ -577,7 +577,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_063418_set03_video_chunk_0006_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Expect to see a dedicated bike lane on the right side of the road",
@@ -585,7 +585,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_063418_set03_video_chunk_0006_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": false
       },
       {
         "text": "Be cautious of traffic lights and potential stops ahead",
@@ -593,7 +593,7 @@
         "start": 0.0,
         "end": 5.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_064310_set03_video_chunk_0027_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "You may encounter pedestrians crossing the street at marked crosswalks",
@@ -601,7 +601,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_062900_set02_video_chunk_0025_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Keep an eye out for cars turning across the crosswalk",
@@ -609,7 +609,7 @@
         "start": 20.0,
         "end": 25.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_062900_set02_video_chunk_0025_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Orange cones may be present to narrow the lane and guide traffic",
@@ -617,7 +617,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_071742_set06_video_chunk_0017_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       },
       {
         "text": "Large trucks, like dump trucks or delivery vans, may be parked or moving slowly on the road",
@@ -625,7 +625,7 @@
         "start": 25.0,
         "end": 30.0,
         "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261001_071717_set06_video_chunk_0016_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU3NTU3LCJpYXQiOjE3OTE1NzExNTcsInJvbGUiOiJ1c2VyIn0.3pFg1J9j1OPQV6vruvS4LKPUGmj9gbhLvYmgnVT-Hrw",
-        "grounded": null
+        "grounded": true
       }
     ]
   }
