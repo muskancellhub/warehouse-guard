@@ -1,0 +1,26 @@
+{
+  "walking": [
+    "pedestrians crossing at a busy crosswalk",
+    "construction barriers or scaffolding on the sidewalk",
+    "police vehicle or officer on the street",
+    "people waiting at a bus stop",
+    "crowded sidewalk near storefronts",
+    "rain or wet street with umbrellas"
+  ],
+  "cycling": [
+    "truck or van stopped in the bike lane",
+    "cyclist riding in a green bike lane",
+    "delivery truck parked with rear doors open",
+    "orange cones narrowing the lane",
+    "cyclist stopped behind a parked truck",
+    "car turning across a crosswalk with a cyclist"
+  ],
+  "driving": [
+    "double-parked vehicle blocking a lane",
+    "yellow taxi stopped at the intersection",
+    "bus pulling into the intersection",
+    "vehicle entering on a red light",
+    "pedestrians stepping into the road between cars",
+    "road work with cones and a lane closure"
+  ]
+}
