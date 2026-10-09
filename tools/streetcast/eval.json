@@ -1,0 +1,562 @@
+[
+  {
+    "destination": "new_york",
+    "time_of_day": "dusk",
+    "mode": "cycling",
+    "claims": [
+      {
+        "text": "You're heading into New York at dusk on your cycling route, expect to see a dedicated bike lane marked with green pavement and white lane lines as seen in clip 20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "As you ride, be aware of vehicles like the black SUV stopped in the bike lane, as shown in clip 20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "You'll also encounter other cyclists, such as the one wearing a white helmet and a yellow and black jersey, riding alongside the camera vehicle in clip 20261008_074731_GX050001_chunk_0002_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_074731_GX050001_chunk_0002_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of traffic cones narrowing the lane, as seen in clip 20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Additionally, watch out for cars turning across crosswalks with cyclists, as shown in clip 20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+        "clip": "20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "As you approach intersections, be mindful of traffic lights and pedestrians crossing, like in clip 20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "Finally, expect to see a mix of vehicles, including delivery trucks and parked cars, as you make your way through the city streets, similar to what's shown in clip 20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "day",
+    "mode": "walking",
+    "claims": [
+      {
+        "text": "You're heading into a busy city street intersection, where pedestrians are crossing at a marked crosswalk, as seen in clip 20261008_070528_VID_20261006_174811_003_chunk_0018_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+        "clip": "20261008_070528_VID_20261006_174811_003_chunk_0018_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "Expect to see a mix of vehicles, including a white delivery truck and a black Tesla, as shown in clip 20261008_070619_VID_20261006_174811_003_chunk_0020_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_070619_VID_20261006_174811_003_chunk_0020_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "Be aware of construction barriers and scaffolding on the sidewalk, as visible in clip 20261008_073918_GX010001_chunk_0006_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_073918_GX010001_chunk_0006_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "You may encounter police vehicles, such as a white police SUV, as seen in clip 20261008_065328_VID_20261006_171812_002_chunk_0021_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
+        "clip": "20261008_065328_VID_20261006_171812_002_chunk_0021_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "Pedestrians are waiting at bus stops, as shown in clip 20261008_065419_VID_20261006_171812_002_chunk_0023_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_065419_VID_20261006_171812_002_chunk_0023_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "The sidewalks may be crowded near storefronts, as visible in clip 20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Be prepared for potential rain or wet streets, as indicated by umbrellas and wet patches on the road, as seen in clip 20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+        "clip": "20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "day",
+    "mode": "driving",
+    "claims": [
+      {
+        "text": "You're heading into New York City on a busy day, expect to see double-parked vehicles blocking lanes, as seen in clip 20261008_072419_GOPR0130_chunk_0001_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_072419_GOPR0130_chunk_0001_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of pedestrians stepping into the road between cars, as shown in clip 20261008_070230_VID_20261006_174811_003_chunk_0011_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_070230_VID_20261006_174811_003_chunk_0011_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Road work with cones and lane closures is present, as seen in clip 20261008_071213_IMG_0509_chunk_0003_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_071213_IMG_0509_chunk_0003_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "Yellow taxis will be stopped at intersections, as shown in clip 20261008_070852_VID_20261006_174811_003_chunk_0026_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_070852_VID_20261006_174811_003_chunk_0026_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Buses will be pulling into intersections, as seen in clip 20261008_071355_IMG_0509_chunk_0007_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_071355_IMG_0509_chunk_0007_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Pedestrians are crossing streets and walking on sidewalks, as shown in clip 20261008_070412_VID_20261006_174811_003_chunk_0015_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_070412_VID_20261006_174811_003_chunk_0015_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "Construction barriers and orange cones are present, as seen in clip 20261008_064757_VID_20261006_171812_002_chunk_0008_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_064757_VID_20261006_171812_002_chunk_0008_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "morning",
+    "mode": "cycling",
+    "claims": [
+      {
+        "text": "You're heading into New York City on your bicycle this morning, expect to see a UPS delivery truck parked on the street, as seen in clip 20261008_073220_GOPR0130_chunk_0020_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_073220_GOPR0130_chunk_0020_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "As you ride, be aware of orange cones narrowing the lane, like in clip 20261008_074538_GX010001_chunk_0021_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
+        "clip": "20261008_074538_GX010001_chunk_0021_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "You may encounter a cyclist stopped behind a parked truck, similar to clip 20261008_072353_GOPR0130_chunk_0000_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
+        "clip": "20261008_072353_GOPR0130_chunk_0000_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of cars turning across a crosswalk with a cyclist, as shown in clip 20261008_073038_GOPR0130_chunk_0016_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_073038_GOPR0130_chunk_0016_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "You'll likely ride in a green bike lane, like in clip 20261008_073129_GOPR0130_chunk_0018_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_073129_GOPR0130_chunk_0018_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Expect to see pedestrians and vehicles sharing the road, as seen in clip 20261008_072948_GOPR0130_chunk_0014_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
+        "clip": "20261008_072948_GOPR0130_chunk_0014_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "A truck or van may be stopped in the bike lane, as shown in clip 20261008_072419_GOPR0130_chunk_0001_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_072419_GOPR0130_chunk_0001_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "dusk",
+    "mode": "walking",
+    "claims": [
+      {
+        "text": "You're heading into the city at dusk, expect to see pedestrians crossing at busy crosswalks like this one",
+        "clip": "20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "As you walk, you'll notice cyclists riding in designated bike lanes, such as this one",
+        "clip": "20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Be aware of your surroundings, including police vehicles parked on the street, like this one",
+        "clip": "20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "You may also see people waiting at bus stops or walking along crowded sidewalks near storefronts",
+        "clip": "20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "Some areas may have construction barriers or scaffolding on the sidewalk, so be cautious",
+        "clip": "20261008_074731_GX050001_chunk_0002_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "And finally, be prepared for potentially wet streets and pedestrians with umbrellas, as seen here",
+        "clip": "20261008_074706_GX050001_chunk_0001_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "As you navigate the city streets, keep an eye out for traffic lights and stop signs, like this one",
+        "clip": "20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "day",
+    "mode": "cycling",
+    "claims": [
+      {
+        "text": "You're heading into New York City on your bike on a day with moderate traffic.",
+        "clip": "20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "Expect to see USPS trucks parked on the street, partially blocking the bike lane, as seen in this clip.",
+        "clip": "20261008_072353_GOPR0130_chunk_0000_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "As you ride, you'll notice orange traffic cones narrowing the lane in some areas, like this scene.",
+        "clip": "20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of cars turning across crosswalks with cyclists, as shown in this video.",
+        "clip": "20261008_072948_GOPR0130_chunk_0014_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "You'll also see cyclists riding in green bike lanes, following another cyclist ahead, like in this clip.",
+        "clip": "20261008_073013_GOPR0130_chunk_0015_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "Additionally, you may encounter delivery trucks parked with rear doors open, as seen here.",
+        "clip": "20261008_071858_IMG_0509_chunk_0019_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "As you navigate the city streets, be aware of your surroundings and follow traffic rules to ensure a safe ride.",
+        "clip": "20261008_073104_GOPR0130_chunk_0017_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "morning",
+    "mode": "walking",
+    "claims": [
+      {
+        "text": "You're heading to New York on a morning walk, expect to see pedestrians crossing at busy crosswalks like the one shown in clip 20261008_070619_VID_20261006_174811_003_chunk_0020_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_070619_VID_20261006_174811_003_chunk_0020_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "As you walk, you'll notice cyclists riding on the sidewalk, as seen in clip 20261008_075053_GX050001_chunk_0010_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_075053_GX050001_chunk_0010_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Be mindful of construction barriers or scaffolding on the sidewalk, like in clip 20261008_073220_GOPR0130_chunk_0020_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_073220_GOPR0130_chunk_0020_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "You may also see police vehicles or officers on the street, as shown in clip 20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_074538_GX010001_chunk_0021_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "People will be waiting at bus stops, like the one in clip 20261008_070412_VID_20261006_174811_003_chunk_0015_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_070412_VID_20261006_174811_003_chunk_0015_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Sidewalks near storefronts may be crowded, as seen in clip 20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "And, in case of rain, you might see umbrellas and wet streets, like in clip 20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+        "clip": "20261008_073542_GOPR0130_chunk_0028_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "new_york",
+    "time_of_day": "dusk",
+    "mode": "driving",
+    "claims": [
+      {
+        "text": "You're heading into the city at dusk, expect to see a mix of vehicles and pedestrians on the road, as seen in clip 20261008_074731_GX050001_chunk_0002_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_074731_GX050001_chunk_0002_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of double-parked vehicles blocking lanes, like in clip 20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "You may encounter road work with cones and lane closures, as shown in clip 20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+        "clip": "20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4",
+        "start": 15.0,
+        "end": 20.0,
+        "grounded": null
+      },
+      {
+        "text": "Pedestrians may step into the road between cars, so stay alert, as seen in clip 20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "Buses and large vehicles will be pulling into intersections, like in clip 20261008_075235_GX050001_chunk_0014_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
+        "clip": "20261008_075235_GX050001_chunk_0014_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "Yellow taxis will be stopped at intersections, as shown in clip 20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4 from 25.0 to 30.0 seconds.",
+        "clip": "20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "Vehicles may enter the intersection on a red light, so be prepared to react, as seen in clip 20261008_075300_GX050001_chunk_0015_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261008_075300_GX050001_chunk_0015_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "san_francisco",
+    "time_of_day": "day",
+    "mode": "driving",
+    "claims": [
+      {
+        "text": "You're heading into San Francisco on a day with clear skies and bright lighting, as seen in clip 20261006_124504_sf5_chunk_0022_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261006_124504_sf5_chunk_0022_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Expect to see a busy urban intersection with vehicles, including a yellow taxi, moving through the intersection in an orderly manner, as shown in clip 20261006_124504_sf5_chunk_0022_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261006_124504_sf5_chunk_0022_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Be aware of pedestrians crossing the street at designated crosswalks, like in clip 20261001_100624_sf3_chunk_0005_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261001_100624_sf3_chunk_0005_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      },
+      {
+        "text": "You may encounter a black bus driving through an intersection, as seen in clip 20261001_101438_sf4_chunk_0018_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+        "clip": "20261001_101438_sf4_chunk_0018_segment_003_of_006.mp4",
+        "start": 10.0,
+        "end": 15.0,
+        "grounded": null
+      },
+      {
+        "text": "Watch out for pedestrians stepping into the road between cars, as shown in clip 20261006_124620_sf5_chunk_0025_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+        "clip": "20261006_124620_sf5_chunk_0025_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of vehicles, including a black SUV, turning at intersections, as seen in clip 20261006_123753_sf5_chunk_0005_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+        "clip": "20261006_123753_sf5_chunk_0005_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "You're likely to see a mix of vehicles, pedestrians, and urban scenery, similar to what's shown in clip 20261001_095126_sf2_chunk_0000_segment_002_of_006.mp4 from 5.0 to 10.0 seconds.",
+        "clip": "20261001_095126_sf2_chunk_0000_segment_002_of_006.mp4",
+        "start": 5.0,
+        "end": 10.0,
+        "grounded": null
+      }
+    ]
+  },
+  {
+    "destination": "toronto",
+    "time_of_day": "day",
+    "mode": "cycling",
+    "claims": [
+      {
+        "text": "You're heading to Toronto on your bike on a sunny day",
+        "clip": "20261001_063418_set03_video_chunk_0006_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "Expect to see a dedicated bike lane on the right side of the road",
+        "clip": "20261001_063418_set03_video_chunk_0006_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "Be cautious of traffic lights and stop signs, like the one at the intersection ahead",
+        "clip": "20261001_064310_set03_video_chunk_0027_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "Watch out for cars turning across crosswalks, as you approach the intersection",
+        "clip": "20261001_062900_set02_video_chunk_0025_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      },
+      {
+        "text": "You may encounter orange cones narrowing the lane, guiding traffic around a large truck",
+        "clip": "20261001_071742_set06_video_chunk_0017_segment_006_of_006.mp4",
+        "start": 25.0,
+        "end": 30.0,
+        "grounded": null
+      },
+      {
+        "text": "Pedestrians and other cyclists will be sharing the road with you, so stay alert",
+        "clip": "20261001_064310_set03_video_chunk_0027_segment_001_of_006.mp4",
+        "start": 0.0,
+        "end": 5.0,
+        "grounded": null
+      },
+      {
+        "text": "As you ride, you'll see a mix of buildings, including modern glass structures and older brick buildings",
+        "clip": "20261001_063534_set03_video_chunk_0009_segment_005_of_006.mp4",
+        "start": 20.0,
+        "end": 25.0,
+        "grounded": null
+      }
+    ]
+  }
+]
