@@ -1,0 +1,1162 @@
+{
+  "video": "GOPR0130",
+  "label": "GOPR0130 \u00b7 nyc_bike_gopro-1",
+  "summary": {
+    "duration_s": 900,
+    "events": 44,
+    "reports_ready": 44,
+    "time_lost_s": 315,
+    "by_category": {
+      "street obstruction": 13,
+      "graffiti": 7,
+      "sanitation": 8,
+      "blocked bike lane": 9,
+      "construction": 5,
+      "double parking": 2
+    },
+    "by_cause": {
+      "usps": 0.46,
+      "graffiti": 0.238,
+      "sanitation": 0.127,
+      "street obstruction": 0.095,
+      "ups": 0.032,
+      "blocked bike lane": 0.016,
+      "nyc bus": 0.016,
+      "none": 0.016
+    }
+  },
+  "events": [
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": "6531286",
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "A white USPS delivery truck is parked on a city street, partially obstructing the lane.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "graffiti",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "An orange traffic barricade with graffiti is positioned on the street.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": null,
+      "street": "not visible",
+      "text": "Several black trash bags are piled nearby.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "A white United States Postal Service (USPS) delivery truck is parked ahead, partially blocking the road.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "Several black trash bags are piled beside the barricade.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "A white USPS delivery truck is parked, partially blocking the lane, with an orange construction barrier with graffiti in front of it.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "category": "graffiti",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "An orange construction barrier with graffiti is placed on the road.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "Several black trash bags are piled on the sidewalk.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "A USPS truck is parked, partially blocking the road, with an orange traffic barricade and graffiti further obstructing the path.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "Several black trash bags are piled up on the sidewalk.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "A white USPS delivery truck is parked ahead, partially blocking the lane.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "Several black trash bags are piled up along the curb.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": null,
+      "street": "not visible",
+      "text": "A large white USPS delivery truck is parked or moving slowly ahead, partially obstructing the view, with an orange construction barrier and graffiti further obstructing the path.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_005_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "street obstruction",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "A man stands in the middle of the road, holding a camera and a microphone, with a USPS truck parked behind him.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "stopped",
+      "street": "not visible",
+      "text": "Several black trash bags are piled up near the barricade on the right side of the street.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "category": "blocked bike lane",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "slowed",
+      "street": "not visible",
+      "text": "A white USPS delivery truck is parked on the right side of the street, partially blocking the lane.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_002_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "category": "graffiti",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "riding",
+      "street": "not visible",
+      "text": "An orange construction barrier with graffiti is visible in the background.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_003_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "blocked bike lane",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": null,
+      "street": "not visible",
+      "text": "A white USPS truck is parked in the center of the road, partially blocking the lane.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "sanitation",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": null,
+      "street": "not visible",
+      "text": "Several black trash bags are piled beside the traffic barricade.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "category": "blocked bike lane",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "slowed",
+      "street": "not visible",
+      "text": "A white USPS delivery truck is parked in the middle of the street, partially blocking the lane.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_006_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "category": "blocked bike lane",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": null,
+      "street": "not visible",
+      "text": "A white United States Postal Service delivery truck is parked in the middle of the street, partially blocking the lane.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_003_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "category": "blocked bike lane",
+      "company": "USPS",
+      "fleet_number": null,
+      "rider_reaction": "riding",
+      "street": "not visible",
+      "text": "Two white United States Postal Service trucks are parked along the left and right curbs, partially blocking the lane, as a cyclist rides ahead.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_005_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "category": "graffiti",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": "riding",
+      "street": "not visible",
+      "text": "A white box truck with graffiti on its side is visible.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_002_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "category": "construction",
+      "company": null,
+      "fleet_number": null,
+      "rider_reaction": null,
+      "street": "not visible",
+      "text": "Scaffolding covers parts of the buildings on the right, indicating ongoing construction.",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_001_of_006.mp4",
+      "camera": "nyc_bike_gopro-1"
+    }
+  ],
+  "complaints": [
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A white USPS delivery truck is parked on a city street, partially obstructing the lane.",
+      "company": "USPS",
+      "fleet_number": "6531286",
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "timestamp": "0.0-25.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "An orange traffic barricade with graffiti is positioned on the street.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "timestamp": "0.0-15.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled nearby.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A white United States Postal Service (USPS) delivery truck is parked ahead, partially blocking the road.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "timestamp": "5.0-30.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled beside the barricade.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "timestamp": "5.0-15.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A white USPS delivery truck is parked, partially blocking the lane, with an orange construction barrier with graffiti in front of it.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "timestamp": "5.0-20.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "An orange construction barrier with graffiti is placed on the road.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "timestamp": "0.0-30.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled on the sidewalk.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "timestamp": "15.0-30.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A USPS truck is parked, partially blocking the road, with an orange traffic barricade and graffiti further obstructing the path.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "timestamp": "0.0-20.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled up on the sidewalk.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A white USPS delivery truck is parked ahead, partially blocking the lane.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "timestamp": "0.0-30.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled up along the curb.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A large white USPS delivery truck is parked or moving slowly ahead, partially obstructing the view, with an orange construction barrier and graffiti further obstructing the path.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_005_of_006.mp4",
+      "timestamp": "20.0-25.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "An orange traffic barricade with graffiti is positioned, further obstructing the path.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_006_of_006.mp4",
+      "timestamp": "0.0-30.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A man stands in the middle of the road, holding a camera and a microphone, with a USPS truck parked behind him.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled up near the barricade on the right side of the street.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A white USPS delivery truck is parked on the right side of the street, partially blocking the lane.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_002_of_006.mp4",
+      "timestamp": "0.0-20.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "An orange construction barrier with graffiti is visible in the background.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_003_of_006.mp4",
+      "timestamp": "10.0-15.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A white USPS truck is parked in the center of the road, partially blocking the lane.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "Several black trash bags are piled beside the traffic barricade.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A white USPS delivery truck is parked in the middle of the street, partially blocking the lane.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_006_of_006.mp4",
+      "timestamp": "25.0-30.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A white United States Postal Service delivery truck is parked in the middle of the street, partially blocking the lane.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_003_of_006.mp4",
+      "timestamp": "10.0-15.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "Two white United States Postal Service trucks are parked along the left and right curbs, partially blocking the lane, as a cyclist rides ahead.",
+      "company": "USPS",
+      "fleet_number": null,
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_005_of_006.mp4",
+      "timestamp": "20.0-25.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "A white box truck with graffiti on its side is visible.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_002_of_006.mp4",
+      "timestamp": "5.0-10.0"
+    },
+    {
+      "category": "construction",
+      "street": "not visible",
+      "what_happened": "Scaffolding covers parts of the buildings on the right, indicating ongoing construction.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_001_of_006.mp4",
+      "timestamp": "0.0-5.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A white van is parked along the curb, partially blocking the lane and creating a potential obstruction.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_002_of_006.mp4",
+      "timestamp": "5.0-10.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A black delivery truck is parked along the curb, partially obstructing the lane.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_006_of_006.mp4",
+      "timestamp": "25.0-30.0"
+    },
+    {
+      "category": "construction",
+      "street": "not visible",
+      "what_happened": "Scaffolding is present along the right side of the street.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_003_of_006.mp4",
+      "timestamp": "10.0-15.0"
+    },
+    {
+      "category": "construction",
+      "street": "not visible",
+      "what_happened": "Orange and white construction barriers line both sides of the road.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_005_of_006.mp4",
+      "timestamp": "20.0-25.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "A white delivery truck with graffiti on its side is visible on the left.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_072806_GOPR0130_chunk_0010_segment_006_of_006.mp4",
+      "timestamp": "25.0-30.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A UPS delivery truck is partially blocking the bike lane.",
+      "company": "UPS",
+      "fleet_number": null,
+      "clip": "20261008_073104_GOPR0130_chunk_0017_segment_004_of_006.mp4",
+      "timestamp": "15.0-20.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A yellow forklift partially blocks the path of the cyclists.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073154_GOPR0130_chunk_0019_segment_002_of_006.mp4",
+      "timestamp": "5.0-10.0"
+    },
+    {
+      "category": "sanitation",
+      "street": "not visible",
+      "what_happened": "A large white garbage truck is moving in the same direction as the cyclists.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073154_GOPR0130_chunk_0019_segment_004_of_006.mp4",
+      "timestamp": "15.0-20.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A UPS delivery truck is parked along the curb, partially blocking the lane.",
+      "company": "UPS",
+      "fleet_number": null,
+      "clip": "20261008_073220_GOPR0130_chunk_0020_segment_003_of_006.mp4",
+      "timestamp": "10.0-15.0"
+    },
+    {
+      "category": "double parking",
+      "street": "not visible",
+      "what_happened": "A UPS delivery truck is parked on the street, potentially blocking traffic.",
+      "company": "UPS",
+      "fleet_number": null,
+      "clip": "20261008_073245_GOPR0130_chunk_0021_segment_004_of_006.mp4",
+      "timestamp": "15.0-20.0"
+    },
+    {
+      "category": "double parking",
+      "street": "not visible",
+      "what_happened": "A UPS delivery truck is parked on the side of the street, potentially blocking traffic.",
+      "company": "UPS",
+      "fleet_number": null,
+      "clip": "20261008_073245_GOPR0130_chunk_0021_segment_005_of_006.mp4",
+      "timestamp": "20.0-25.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "Orange traffic cones block a section of the sidewalk or a lane.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073310_GOPR0130_chunk_0022_segment_003_of_006.mp4",
+      "timestamp": "10.0-15.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A large green garbage truck partially blocks the lane.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073310_GOPR0130_chunk_0022_segment_004_of_006.mp4",
+      "timestamp": "15.0-20.0"
+    },
+    {
+      "category": "construction",
+      "street": "not visible",
+      "what_happened": "Orange traffic cones are placed along the road, indicating a construction or lane closure area.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073401_GOPR0130_chunk_0024_segment_001_of_006.mp4",
+      "timestamp": "0.0-10.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A large white delivery truck with blue graffiti is partially blocking the lane.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073335_GOPR0130_chunk_0023_segment_006_of_006.mp4",
+      "timestamp": "25.0-30.0"
+    },
+    {
+      "category": "construction",
+      "street": "not visible",
+      "what_happened": "Orange construction barriers and traffic cones are visible on the left side, indicating roadwork or a closed lane.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073401_GOPR0130_chunk_0024_segment_005_of_006.mp4",
+      "timestamp": "20.0-25.0"
+    },
+    {
+      "category": "blocked bike lane",
+      "street": "not visible",
+      "what_happened": "A white bus is partially blocking the lane.",
+      "company": "NYC Bus",
+      "fleet_number": null,
+      "clip": "20261008_073401_GOPR0130_chunk_0024_segment_005_of_006.mp4",
+      "timestamp": "20.0-25.0"
+    },
+    {
+      "category": "graffiti",
+      "street": "not visible",
+      "what_happened": "A white delivery truck with graffiti on its side is parked or moving slowly on the left side of the road.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073451_GOPR0130_chunk_0026_segment_004_of_006.mp4",
+      "timestamp": "15.0-20.0"
+    },
+    {
+      "category": "street obstruction",
+      "street": "not visible",
+      "what_happened": "A large white box truck partially blocks the lane.",
+      "company": null,
+      "fleet_number": null,
+      "clip": "20261008_073542_GOPR0130_chunk_0028_segment_006_of_006.mp4",
+      "timestamp": "25.0-30.0"
+    }
+  ],
+  "segments": [
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072353_GOPR0130_chunk_0000_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072353_GOPR0130_chunk_0000_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072419_GOPR0130_chunk_0001_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072419_GOPR0130_chunk_0001_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072444_GOPR0130_chunk_0002_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072444_GOPR0130_chunk_0002_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072509_GOPR0130_chunk_0003_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072509_GOPR0130_chunk_0003_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072535_GOPR0130_chunk_0004_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072535_GOPR0130_chunk_0004_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072600_GOPR0130_chunk_0005_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072600_GOPR0130_chunk_0005_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072625_GOPR0130_chunk_0006_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072625_GOPR0130_chunk_0006_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072625_GOPR0130_chunk_0006_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072625_GOPR0130_chunk_0006_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072625_GOPR0130_chunk_0006_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072625_GOPR0130_chunk_0006_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072625_GOPR0130_chunk_0006_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072625_GOPR0130_chunk_0006_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072625_GOPR0130_chunk_0006_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072625_GOPR0130_chunk_0006_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072625_GOPR0130_chunk_0006_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072625_GOPR0130_chunk_0006_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072651_GOPR0130_chunk_0007_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072651_GOPR0130_chunk_0007_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072716_GOPR0130_chunk_0008_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072716_GOPR0130_chunk_0008_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072716_GOPR0130_chunk_0008_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072716_GOPR0130_chunk_0008_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072716_GOPR0130_chunk_0008_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072716_GOPR0130_chunk_0008_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072716_GOPR0130_chunk_0008_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072741_GOPR0130_chunk_0009_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072741_GOPR0130_chunk_0009_segment_001_of_006.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072741_GOPR0130_chunk_0009_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072741_GOPR0130_chunk_0009_segment_002_of_006.mp4",
+      "start": 5.0,
+      "end": 10.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072741_GOPR0130_chunk_0009_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072741_GOPR0130_chunk_0009_segment_003_of_006.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072741_GOPR0130_chunk_0009_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072741_GOPR0130_chunk_0009_segment_004_of_006.mp4",
+      "start": 15.0,
+      "end": 20.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072741_GOPR0130_chunk_0009_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072741_GOPR0130_chunk_0009_segment_005_of_006.mp4",
+      "start": 20.0,
+      "end": 25.0,
+      "camera": "nyc_bike_gopro-1"
+    },
+    {
+      "clip": "20261008_072741_GOPR0130_chunk_0009_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_072741_GOPR0130_chunk_0009_segment_006_of_006.mp4",
+      "start": 25.0,
+      "end": 30.0,
+      "camera": "nyc_bike_gopro-1"
+    }
+  ]
+}

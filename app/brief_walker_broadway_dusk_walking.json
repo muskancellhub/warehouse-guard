@@ -1,0 +1,146 @@
+{
+  "request": {
+    "destination": "walker_broadway",
+    "time_of_day": "dusk",
+    "mode": "walking"
+  },
+  "queries": [
+    {
+      "query": "pedestrians crossing at a busy crosswalk dusk",
+      "hits": 3
+    },
+    {
+      "query": "construction barriers or scaffolding on the sidewalk dusk",
+      "hits": 3
+    },
+    {
+      "query": "police vehicle or officer on the street dusk",
+      "hits": 3
+    },
+    {
+      "query": "people waiting at a bus stop dusk",
+      "hits": 3
+    },
+    {
+      "query": "crowded sidewalk near storefronts dusk",
+      "hits": 3
+    },
+    {
+      "query": "rain or wet street with umbrellas dusk",
+      "hits": 3
+    }
+  ],
+  "script": [
+    {
+      "text": "You're heading to walker_broadway at dusk, expect to see pedestrians crossing at a busy crosswalk",
+      "clip": "20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0
+    },
+    {
+      "text": "As you walk, you'll notice a police car parked on the left side of the street",
+      "clip": "20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4",
+      "camera": "camera",
+      "start": 5.0,
+      "end": 10.0
+    },
+    {
+      "text": "Be mindful of cyclists riding in the bike lane, like the one wearing a white helmet and a bright yellow-green top",
+      "clip": "20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0
+    },
+    {
+      "text": "You may see people waiting at a bus stop or walking along the crowded sidewalk near storefronts",
+      "clip": "20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4",
+      "camera": "camera",
+      "start": 25.0,
+      "end": 30.0
+    },
+    {
+      "text": "The road surface may be wet, reflecting the lights from vehicles and storefronts",
+      "clip": "20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0
+    },
+    {
+      "text": "As you approach the intersection, you'll see a traffic light ahead, which may be red, requiring vehicles to stop",
+      "clip": "20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4",
+      "camera": "camera",
+      "start": 20.0,
+      "end": 25.0
+    },
+    {
+      "text": "The overall atmosphere is that of a busy city environment at dusk, with pedestrians, cyclists, and vehicles sharing the road",
+      "clip": "20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0
+    }
+  ],
+  "clips": [
+    {
+      "clip": "20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074706_GX050001_chunk_0001_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene unfolds on a city street at dusk, with the camera mounted on a moving vehicle. The road is a multi-lane urban thoroughfare with a marked crosswalk and a bike lane visible on the right. Pedestrians are crossing the street at the crosswalk, and several people are walking along the sidewalk on the left side of the frame. A yellow taxi is traveling in the same direction as the camera vehicle, positioned ahead and slightly to the right. The taxi\u2019s headlights are on, and it appears to be moving at a moderate speed. The surrounding area includes modern buildings with illuminated storefronts, including one with a sign that reads \"SEAHORES.\" The traffic light ahead is green, allowing the flow of vehicles. There are no visible traffic violations or immediate hazards in the scene."
+    },
+    {
+      "clip": "20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4",
+      "camera": "camera",
+      "start": 5.0,
+      "end": 10.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075028_GX050001_chunk_0009_segment_002_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene unfolds at a city intersection during twilight, with a marked pedestrian crosswalk spanning the roadway. A police car is parked on the left side of the street, near the curb. The camera moves forward along the crosswalk, approaching a group of pedestrians who are crossing the street. The pedestrians are walking from right to left across the crosswalk, and the camera passes them as it continues forward. The surrounding area includes tall buildings with illuminated windows, and the street is lined with traffic lights and other urban infrastructure. The overall atmosphere is that of a busy city environment at dusk."
+    },
+    {
+      "clip": "20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074731_GX050001_chunk_0002_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene unfolds on a city street at dusk, with the sky a dim blue and streetlights and building windows providing illumination. The road surface is wet, reflecting the lights from vehicles and storefronts. A cyclist wearing a white helmet and a bright yellow-green top is riding in the bike lane, moving alongside the camera vehicle. The bike lane is clearly marked with the word \"BIKE\" painted on the pavement. Metal bollards line the edge of the sidewalk, separating it from the roadway. Pedestrians are visible walking along the sidewalk, and several cars are driving in the adjacent lanes, their headlights on. A traffic light is visible ahead, showing green for the direction of travel. The overall environment suggests an active urban setting with mixed traffic and infrastructure designed to accommodate both vehicles and cyclists."
+    },
+    {
+      "clip": "20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4",
+      "camera": "camera",
+      "start": 25.0,
+      "end": 30.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074706_GX050001_chunk_0001_segment_006_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene is captured from a moving vehicle traveling along a city street at dusk. The road is a multi-lane urban thoroughfare with traffic flowing in both directions. On the right side of the street, a yellow taxi and several dark-colored sedans are visible, moving along the roadway. The vehicle from which the footage is taken passes a row of metal bollards that separate the sidewalk from the street. A person wearing a bright orange beanie, a yellow shirt, and light-colored pants walks along the sidewalk, moving in the same direction as the camera vehicle. Another individual is seen standing near a storefront on the left side of the street. The sidewalk is lined with buildings featuring illuminated windows and storefronts, some with outdoor seating areas. A bicycle is parked near the bollards. Traffic lights are visible ahead, showing green for the direction of travel. The overall environment is a busy urban setting with moderate traffic and pedestrians."
+    },
+    {
+      "clip": "20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4",
+      "camera": "camera",
+      "start": 20.0,
+      "end": 25.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075351_GX050001_chunk_0017_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene unfolds on a city street at dusk, with the sky transitioning to a deep blue. The road is a two-lane urban thoroughfare, with a dedicated green bike lane marked on the right side. The bike lane is separated from the main traffic lanes by a solid white line. On the right side of the street, there is a sidewalk lined with outdoor seating from a restaurant, including tables and chairs, and a few pedestrians are visible near the storefronts. A person is walking across the crosswalk ahead of the camera, moving from the right side of the street toward the left. The crosswalk is clearly marked with white stripes. The traffic light ahead is red, requiring vehicles to stop. Several cars are visible in the adjacent lane, including a black SUV and a silver sedan, both moving slowly or stopped. A black car is directly ahead in the same lane as the camera, and it appears to be slowing down as it approaches the intersection. The buildings on both sides of the street are multi-story, with illuminated windows and..."
+    }
+  ],
+  "stats": {
+    "person": 29,
+    "car": 33,
+    "truck": 2,
+    "bicycle": 5,
+    "bus": 3,
+    "motorcycle": 4
+  }
+}

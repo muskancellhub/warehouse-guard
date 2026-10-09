@@ -1,0 +1,155 @@
+{
+  "request": {
+    "destination": "new_york",
+    "time_of_day": "dusk",
+    "mode": "cycling"
+  },
+  "queries": [
+    {
+      "query": "truck or van stopped in the bike lane dusk",
+      "hits": 3
+    },
+    {
+      "query": "cyclist riding in a green bike lane dusk",
+      "hits": 3
+    },
+    {
+      "query": "delivery truck parked with rear doors open dusk",
+      "hits": 3
+    },
+    {
+      "query": "orange cones narrowing the lane dusk",
+      "hits": 3
+    },
+    {
+      "query": "cyclist stopped behind a parked truck dusk",
+      "hits": 3
+    },
+    {
+      "query": "car turning across a crosswalk with a cyclist dusk",
+      "hits": 3
+    }
+  ],
+  "script": [
+    {
+      "text": "You're heading into New York at dusk on your cycling route, expect to see a dedicated bike lane marked with green pavement and white lane lines as seen in clip 20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+      "clip": "20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+      "camera": "camera",
+      "start": 10.0,
+      "end": 15.0
+    },
+    {
+      "text": "As you ride, be aware of vehicles like the black SUV stopped in the bike lane, as shown in clip 20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+      "clip": "20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+      "camera": "camera",
+      "start": 10.0,
+      "end": 15.0
+    },
+    {
+      "text": "You'll also encounter other cyclists, like the one wearing a yellow jacket, riding ahead in the bike lane, as seen in clip 20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+      "clip": "20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4",
+      "camera": "camera",
+      "start": 0.0,
+      "end": 5.0
+    },
+    {
+      "text": "Be cautious of traffic cones narrowing the lane, as shown in clip 20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4 from 10.0 to 15.0 seconds.",
+      "clip": "20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4",
+      "camera": "camera",
+      "start": 10.0,
+      "end": 15.0
+    },
+    {
+      "text": "Additionally, watch out for cars turning across crosswalks with cyclists, as depicted in clip 20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4 from 0.0 to 5.0 seconds.",
+      "clip": "20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4",
+      "camera": "camera",
+      "start": 0.0,
+      "end": 5.0
+    },
+    {
+      "text": "As you approach intersections, be prepared to stop at red lights and yield to pedestrians, as seen in clip 20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4 from 15.0 to 20.0 seconds.",
+      "clip": "20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0
+    },
+    {
+      "text": "Finally, expect to see a mix of vehicles, including delivery trucks and parked cars, along your route, as shown in clip 20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4 from 20.0 to 25.0 seconds.",
+      "clip": "20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+      "camera": "camera",
+      "start": 20.0,
+      "end": 25.0
+    }
+  ],
+  "clips": [
+    {
+      "clip": "20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4",
+      "camera": "camera",
+      "start": 10.0,
+      "end": 15.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075351_GX050001_chunk_0017_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene is a city street at dusk with a designated bike lane marked by green pavement and white lane lines. A black SUV is stopped in the lane, partially blocking the path. A cyclist in dark clothing rides through the bike lane, passing the stopped SUV. The street is lined with multi-story buildings, some with illuminated storefronts and signs, including one that reads \"dunnes\". Streetlights and building lights are on, casting a warm glow. In the distance, tall skyscrapers are visible against the evening sky. The camera perspective suggests it is mounted on a vehicle, possibly a scooter or motorcycle, given the low angle and proximity to the bike lane. No traffic signals or stop signs are clearly visible in the immediate foreground."
+    },
+    {
+      "clip": "20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4",
+      "camera": "camera",
+      "start": 0.0,
+      "end": 5.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene unfolds on a city street at dusk, with the camera mounted on a moving vehicle. The road features a dedicated bike lane marked with white bicycle symbols and directional arrows. A cyclist wearing a yellow jacket rides ahead in the bike lane, moving in the same direction as the camera vehicle. Pedestrians are visible on the sidewalk to the right, some crossing at a marked crosswalk. Traffic lights are present at an intersection, showing green for the direction of travel. A white van is parked on the left side of the road, and a motorcycle is visible near the intersection. The road surface includes painted lane markings and a yield sign is partially visible. The overall environment is urban, with tall buildings lining the street and streetlights illuminating the area."
+    },
+    {
+      "clip": "20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4",
+      "camera": "camera",
+      "start": 20.0,
+      "end": 25.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074357_GX010001_chunk_0017_segment_005_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene is a city sidewalk at night, viewed from a moving vehicle. The road is a typical urban street with a sidewalk on the right and a roadway on the left. A UPS delivery truck is parked on the left side of the street, partially blocking the lane. Pedestrians are walking along the sidewalk, including a person in a black jacket and another in a pink jacket. The sidewalk is lined with scaffolding and metal poles, and there are illuminated signs and storefronts in the background. The camera moves forward along the sidewalk, passing by the UPS truck and approaching a building entrance with a glass door. The building has a sign that reads \"WeWork\" and the number \"1460\" is visible on the wall next to the entrance. The overall environment is busy with people and vehicles, and the lighting is provided by streetlights and storefronts."
+    },
+    {
+      "clip": "20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4",
+      "camera": "camera",
+      "start": 15.0,
+      "end": 20.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074912_GX050001_chunk_0006_segment_004_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The video shows a first-person view from a vehicle traveling along a city street at dusk. The road features a dedicated bike lane marked with a bicycle symbol and the word \"PEDS\" painted on the pavement, indicating a pedestrian and bike zone. The vehicle approaches a section where the bike lane ends, and the road merges into a main street with multiple lanes. Orange traffic cones line the left side of the road, suggesting some form of construction or lane closure. A stop sign is visible ahead, and the vehicle slows down as it nears the intersection. Pedestrians can be seen crossing the street, and the vehicle yields to them. The surrounding area includes tall buildings with illuminated windows, streetlights, and a few trees without leaves. The overall scene depicts a typical urban environment with moderate traffic and pedestrian activity."
+    },
+    {
+      "clip": "20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4",
+      "camera": "camera",
+      "start": 10.0,
+      "end": 15.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_074847_GX050001_chunk_0005_segment_003_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The video shows a first-person view from a vehicle moving along a city street at dusk. The road has multiple lanes with white dashed markings and a bike lane on the right side. Tall buildings line both sides of the street, with illuminated windows and storefronts visible. Pedestrians are walking on the sidewalks, and some are standing near the curb. A red car is parked on the right side of the street, partially blocking the bike lane. Traffic cones are placed along the left side of the road, indicating some form of construction or lane closure. The vehicle from which the footage is taken appears to be navigating around the parked car and cones, maintaining a steady pace. There are no visible traffic lights or signs in the immediate view, and no other vehicles or buses are prominently featured. The overall scene suggests a typical urban evening with moderate activity."
+    },
+    {
+      "clip": "20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4",
+      "source": "s3://team-24-vss-chunks-segments/segments/20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4",
+      "camera": "camera",
+      "start": 0.0,
+      "end": 5.0,
+      "stream_url": "http://video-lab-team-24.cosmos.vastdata.com/api/v1/videos/stream?source=s3%3A%2F%2Fteam-24-vss-chunks-segments%2Fsegments%2F20261008_075003_GX050001_chunk_0008_segment_001_of_006.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZWFtLTI0IiwiZXhwIjoxNzkxNjU0MjY2LCJpYXQiOjE3OTE1Njc4NjYsInJvbGUiOiJ1c2VyIn0.lc82pb7__jOfLfnx_HLbojbJkU-MPKGF1FYTeWhQrNk",
+      "description": "The scene unfolds on a wide, multi-lane urban road at dusk, with the camera mounted on a moving vehicle. The road surface is dry and marked with clear white crosswalk stripes. A traffic light ahead is red, requiring the vehicle to stop. Pedestrians are crossing the street at the marked crosswalk, and a cyclist is riding along the road, moving away from the camera. The surroundings include tall buildings with illuminated windows, streetlights, and a few trees without leaves. The vehicle continues forward, passing the crosswalk and approaching the intersection."
+    }
+  ],
+  "stats": {
+    "person": 26,
+    "car": 30,
+    "truck": 2,
+    "bicycle": 4,
+    "bus": 2,
+    "motorcycle": 3
+  }
+}

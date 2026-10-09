@@ -18,11 +18,27 @@ from typing import Any, Optional
 from urllib.parse import quote
 
 import httpx
-import weave
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 from pydantic import BaseModel, Field
+
+try:
+    import weave
+except ImportError:  # optional when only serving saved JSON
+    weave = None
+
+try:
+    from fastapi import FastAPI, HTTPException
+    from fastapi.middleware.cors import CORSMiddleware
+
+    HAS_FASTAPI = True
+except ImportError:
+    HAS_FASTAPI = False
+
+    class HTTPException(Exception):  # type: ignore[no-redef]
+        def __init__(self, status_code: int, detail: str):
+            self.status_code = status_code
+            self.detail = detail
+            super().__init__(detail)
 
 # ---------------------------------------------------------------------------
 # Config (env + /config/<team>.config). Never log secrets.
@@ -107,17 +123,54 @@ VAST_PASS = os.environ.get("PASSWORD") or ""
 _token: Optional[str] = None
 _token_at: float = 0.0
 _chosen_model: Optional[str] = None
+_weave_ready = False
 
-weave.init(f"{WANDB_TEAM}/{WANDB_PROJECT}" if WANDB_TEAM else WANDB_PROJECT)
+# App destinations → VastDB location filter values (adaptable aliases).
+LOCATION_ALIASES = {
+    "new_york": "new_york",
+    "nyc": "new_york",
+    "walker_broadway": "new_york",
+    "8th_ave_34th": "new_york",
+    "nyc_bike_lanes": "new_york",
+    "san_francisco": "san_francisco",
+    "sf": "san_francisco",
+    "toronto": "toronto",
+    "nashville": "nashville",
+    "neighborhood": "neighborhood",
+}
 
-app = FastAPI(title="StreetCast", version="0.1.0")
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+
+def _ensure_weave() -> None:
+    """Lazy Weave init so `import api` from Muskan's app never blocks startup."""
+    global _weave_ready
+    if _weave_ready or weave is None:
+        return
+    try:
+        project = f"{WANDB_TEAM}/{WANDB_PROJECT}" if WANDB_TEAM else WANDB_PROJECT
+        weave.init(project)
+        _weave_ready = True
+    except Exception as exc:
+        print(f"weave.init skipped: {exc}")
+
+
+def _weave_op(fn):
+    """No-op decorator when weave is missing; real @weave.op once available."""
+    if weave is None:
+        return fn
+    return weave.op(fn)
+
+
+if HAS_FASTAPI:
+    app = FastAPI(title="StreetCast", version="0.1.0")
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+else:
+    app = None  # type: ignore[assignment]
 
 
 # ---------------------------------------------------------------------------
@@ -378,8 +431,9 @@ def _extract_json(text: str) -> Any:
         raise
 
 
-@weave.op
+@_weave_op
 def llm_chat(system: str, user: str, temperature: float = 0.2) -> str:
+    _ensure_weave()
     client = _openai_client()
     model = _pick_model(client)
     resp = client.chat.completions.create(
@@ -408,7 +462,7 @@ Rules:
 """
 
 
-@weave.op
+@_weave_op
 def extract_events_batch(batch: list[dict]) -> list[dict]:
     payload = [
         {
@@ -477,7 +531,7 @@ Do not invent clips. Never mention license plates.
 """
 
 
-@weave.op
+@_weave_op
 def generate_briefing_script(destination: str, time_of_day: str, mode: str, clips: list[dict]) -> list[dict]:
     user = json.dumps(
         {
@@ -668,20 +722,23 @@ def load_queries() -> dict[str, list[str]]:
 
 
 def search_hits(query: str, location: str, top_k: int = 3) -> list[dict]:
+    # Note: llm_top_n must be omitted or >=1 — 0 returns 422 from the backend.
     body = {
         "query": query,
         "top_k": top_k,
-        "llm_top_n": 0,
         "min_similarity": 0.25,
         "metadata_filters": {"location": location},
         "include_public": True,
     }
     try:
         data = _post("/api/v1/search", body)
-    except Exception:
-        # location filter may be too strict — retry without
+    except Exception as first_err:
+        # location filter may be too strict / unknown alias — retry without
         body.pop("metadata_filters", None)
-        data = _post("/api/v1/search", body)
+        try:
+            data = _post("/api/v1/search", body)
+        except Exception:
+            raise first_err
     results = data.get("results") or []
     hits = []
     for r in results[:top_k]:
@@ -702,6 +759,7 @@ def search_hits(query: str, location: str, top_k: int = 3) -> list[dict]:
                 "detections": counts or {},
                 "query": query,
                 "similarity": r.get("similarity_score"),
+                "camera": r.get("camera_id") or camera_guess(filename),
                 "stream_url": _stream_url(r["source"]) if r.get("source") else None,
             }
         )
@@ -724,35 +782,48 @@ def aggregate_stats(clips: list[dict]) -> dict[str, int]:
 
 
 # ---------------------------------------------------------------------------
-# Routes
+# Public callables Muskan's app/main.py imports: list_rides / run_ride / run_brief
 # ---------------------------------------------------------------------------
 
 
-@app.get("/health")
-def health():
-    return {
-        "ok": True,
-        "backend": bool(BACKEND),
-        "wandb": bool(WANDB_API_KEY),
-        "model": _chosen_model,
-    }
+def _normalize_ride_id(raw: str) -> str:
+    m = re.search(r"(GOPR\d+|GX\d+)", raw or "", re.I)
+    return m.group(1) if m else (raw or "").strip()
 
 
-@app.get("/rides")
-def rides():
-    return {"rides": _list_rides()}
+def _resolve_location(destination: str) -> str:
+    key = (destination or "").strip().lower().replace(" ", "_")
+    return LOCATION_ALIASES.get(key, key)
 
 
-@app.post("/ride")
-def ride(req: RideRequest):
-    ride_id = req.ride_id()
-    # normalize accidental casing
-    m = re.search(r"(GOPR\d+|GX\d+)", ride_id, re.I)
-    ride_id = m.group(1) if m else ride_id
+def list_rides() -> list[dict]:
+    """Return [{video, label, events?}, ...] for the app ride picker."""
+    rides = []
+    for r in _list_rides():
+        rid = r.get("id") or r.get("video")
+        rides.append(
+            {
+                "video": rid,
+                "label": f"{rid} · nyc_bike_gopro-1",
+                "chunk_count": r.get("chunk_count"),
+                "location": r.get("location"),
+            }
+        )
+    return rides
+
+
+def run_ride(video: str) -> dict:
+    """RideReport payload shaped like app/mock_ride.json (+ segments/complaints)."""
+    ride_id = _normalize_ride_id(video)
+    if not ride_id:
+        raise HTTPException(400, "video is required")
 
     segments = _segments_for_ride(ride_id)
-    # batch LLM
-    batch_size = int(os.environ.get("STREETCAST_BATCH", "6"))
+    max_segs = int(os.environ.get("STREETCAST_MAX_SEGMENTS", "0") or 0)
+    if max_segs > 0:
+        segments = segments[:max_segs]
+
+    batch_size = int(os.environ.get("STREETCAST_BATCH", "8"))
     raw_events: list[dict] = []
     for i in range(0, len(segments), batch_size):
         batch = segments[i : i + batch_size]
@@ -762,38 +833,40 @@ def ride(req: RideRequest):
             print(f"extract batch failed: {exc}")
             continue
 
-    # stamp ride_start from matching segment when missing
     by_clip = {s["clip"]: s for s in segments}
     for e in raw_events:
         seg = by_clip.get(e.get("clip") or "")
-        if seg and e.get("ride_start") is None:
-            e["ride_start"] = seg["ride_start"] + float(e.get("start") or 0)
-            e["ride_end"] = seg["ride_start"] + float(e.get("end") or 5)
+        if not seg:
+            # fuzzy basename match
+            for clip, s in by_clip.items():
+                if e.get("clip") and (e["clip"] in clip or clip in e["clip"]):
+                    seg = s
+                    e["clip"] = clip
+                    break
+        if seg:
+            if e.get("ride_start") is None:
+                e["ride_start"] = seg["ride_start"] + float(e.get("start") or 0)
+                e["ride_end"] = seg["ride_start"] + float(e.get("end") or 5)
+            e["source"] = seg.get("source")
+            e["camera"] = seg.get("camera_id") or RIDE_CAMERA
+            # clamp start/end into the segment window when LLM drifts
+            seg_start = float(seg.get("start") or 0)
+            seg_end = float(seg.get("end") or 5)
+            e["start"] = max(seg_start, min(float(e.get("start") or seg_start), seg_end - 0.5))
+            e["end"] = max(e["start"] + 0.5, min(float(e.get("end") or seg_end), seg_end))
 
     events = merge_duplicates(raw_events)
     summary = compute_summary(segments, events)
     complaints = draft_complaints(events)
 
-    # response shape matches mock_ride.json (+ extras for debugging)
-    return {
-        "video": ride_id,
-        "segments": [
-            {
-                "clip": s["clip"],
-                "start": s["start"],
-                "end": s["end"],
-                "ride_start": s["ride_start"],
-                "ride_end": s["ride_end"],
-                "description": s["description"],
-                "detections": s["detections"],
-                "stream_url": s["stream_url"],
-                "source": s["source"],
-            }
-            for s in segments
-        ],
-        "events": [
+    out_events = []
+    for e in events:
+        seg = by_clip.get(e.get("clip") or "") or {}
+        out_events.append(
             {
                 "clip": e.get("clip"),
+                "source": e.get("source") or seg.get("source") or "",
+                "camera": e.get("camera") or seg.get("camera_id") or RIDE_CAMERA,
                 "start": e.get("start"),
                 "end": e.get("end"),
                 "category": e.get("category"),
@@ -803,50 +876,103 @@ def ride(req: RideRequest):
                 "street": e.get("street"),
                 "text": e.get("text"),
             }
-            for e in events
+        )
+
+    return {
+        "video": ride_id,
+        "label": f"{ride_id} · nyc_bike_gopro-1",
+        "segments": [
+            {
+                "clip": s["clip"],
+                "source": s["source"],
+                "camera": s.get("camera_id") or RIDE_CAMERA,
+                "start": s["start"],
+                "end": s["end"],
+                "ride_start": s["ride_start"],
+                "ride_end": s["ride_end"],
+                "description": s["description"],
+                "detections": s["detections"],
+                "stream_url": s["stream_url"],
+            }
+            for s in segments
         ],
+        "events": out_events,
         "summary": summary,
         "complaints": complaints,
     }
 
 
-@app.post("/brief")
-def brief(req: BriefRequest):
-    destination, time_of_day, mode = req.normalized()
-    queries = load_queries().get(mode) or FALLBACK_QUERIES.get(mode) or []
-    if not queries:
-        raise HTTPException(400, f"No queries for mode={mode}")
+def run_brief(destination: str, time_of_day: str, mode: str) -> dict:
+    """Block briefing shaped like app/mock_brief.json (script lines carry source)."""
+    dest = (destination or "").strip()
+    tod = (time_of_day or "").strip().lower()
+    mode_n = (mode or "").strip().lower()
+    if mode_n not in ("walking", "cycling", "driving"):
+        raise HTTPException(400, f"mode must be walking|cycling|driving, got {mode_n!r}")
 
+    location = _resolve_location(dest)
+    queries = load_queries().get(mode_n) or FALLBACK_QUERIES.get(mode_n) or []
+    if not queries:
+        raise HTTPException(400, f"No queries for mode={mode_n}")
+
+    query_meta: list[dict] = []
     collected: list[dict] = []
     seen_clips: set[str] = set()
     for q in queries:
-        q_full = f"{q} {time_of_day}".strip()
-        for hit in search_hits(q_full, destination, top_k=3):
+        q_full = f"{q} {tod}".strip()
+        hits = search_hits(q_full, location, top_k=3)
+        query_meta.append({"query": q_full, "hits": len(hits)})
+        for hit in hits:
             clip = hit.get("clip") or ""
             if clip in seen_clips:
                 continue
             seen_clips.add(clip)
+            hit["camera"] = hit.get("camera") or "camera"
             collected.append(hit)
 
     if not collected:
         return {
+            "request": {"destination": dest, "time_of_day": tod, "mode": mode_n},
+            "queries": query_meta,
             "script": [],
             "clips": [],
             "stats": {},
             "message": "No clips found for that destination/mode. Try another location or mode.",
         }
 
-    script = generate_briefing_script(destination, time_of_day, mode, collected)
-    cited = {s["clip"] for s in script}
+    script = generate_briefing_script(dest, tod, mode_n, collected)
+    by_clip = {c.get("clip"): c for c in collected}
+    script_out = []
+    for s in script:
+        clip = s.get("clip")
+        hit = by_clip.get(clip) or next(
+            (c for c in collected if clip and clip in (c.get("clip") or "")),
+            {},
+        )
+        script_out.append(
+            {
+                "text": s.get("text"),
+                "clip": clip or hit.get("clip"),
+                "source": hit.get("source") or "",
+                "camera": hit.get("camera") or camera_guess(clip or ""),
+                "start": s.get("start", hit.get("start", 0)),
+                "end": s.get("end", hit.get("end", 5)),
+            }
+        )
+
+    cited = {s["clip"] for s in script_out}
     clips_out = [c for c in collected if c.get("clip") in cited] or collected[:8]
     stats = aggregate_stats(clips_out)
 
     return {
-        "script": script,
+        "request": {"destination": dest, "time_of_day": tod, "mode": mode_n},
+        "queries": query_meta,
+        "script": script_out,
         "clips": [
             {
                 "clip": c.get("clip"),
                 "source": c.get("source"),
+                "camera": c.get("camera") or camera_guess(c.get("clip") or ""),
                 "start": c.get("start"),
                 "end": c.get("end"),
                 "stream_url": c.get("stream_url"),
@@ -858,7 +984,48 @@ def brief(req: BriefRequest):
     }
 
 
+def camera_guess(clip: str) -> str:
+    if re.search(r"GOPR|GX\d", clip or ""):
+        return RIDE_CAMERA
+    if "VID_" in (clip or ""):
+        return "nyc_streets_cam-1"
+    if "IMG_" in (clip or ""):
+        return "nyc_streets_cam-2"
+    return "camera"
+
+
+# ---------------------------------------------------------------------------
+# FastAPI routes (optional — Muskan's stdlib server uses the callables above)
+# ---------------------------------------------------------------------------
+
+if HAS_FASTAPI and app is not None:
+
+    @app.get("/health")
+    def health():
+        return {
+            "ok": True,
+            "backend": bool(BACKEND),
+            "wandb": bool(WANDB_API_KEY),
+            "model": _chosen_model,
+        }
+
+    @app.get("/rides")
+    def rides_route():
+        return {"rides": list_rides()}
+
+    @app.post("/ride")
+    def ride_route(req: RideRequest):
+        return run_ride(req.ride_id())
+
+    @app.post("/brief")
+    def brief_route(req: BriefRequest):
+        destination, time_of_day, mode = req.normalized()
+        return run_brief(destination, time_of_day, mode)
+
+
 if __name__ == "__main__":
+    if not HAS_FASTAPI:
+        raise SystemExit("fastapi/uvicorn not installed; use app/main.py instead")
     import uvicorn
 
     uvicorn.run(
