@@ -1,0 +1,13 @@
+These are the submission + eval files. Drop README.md at the repo root and the other 3 in tools/streetcast/. Then on your VM:
+
+bash
+cd ~/vast-builders-challenge
+python tools/streetcast/prep_eval.py     # runs all 10 briefs, fills eval.json with sentences
+
+Send me back the filled eval.json — I’ll mark each sentence grounded true/false against its clip. Then:
+
+bash
+python tools/streetcast/eval.py           # prints briefing / sentences / grounded / rate + logs Weave
+
+If san_francisco/toronto come back empty, swap them for more new_york time/mode combos. prep_eval.py and eval.py both import api, so they must run next to your api.py.
+I am sending you the files give me one second
